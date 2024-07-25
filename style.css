@@ -1,5 +1,54 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;1,300&display=swap");
 
+:root {
+  --color1: #260120;
+  --color2: #390540;
+  --color3: #8630bf;
+  --color4: #d95043;
+  --color5: #0d0d0d;
+}
+
+
+.bg-color1 {
+  background-color: var(--color1) !important;
+}
+
+.bg-color2 {
+  background-color: var(--color2) !important;
+}
+
+.bg-color3 {
+  background-color: var(--color3) !important;
+}
+
+.bg-color4 {
+  background-color: var(--color4) !important;
+}
+
+.bg-color5 {
+  background-color: var(--color5) !important;
+}
+
+.text-color1 {
+  color: var(--color1) !important;
+}
+
+.text-color2 {
+  color: var(--color2) !important;
+}
+
+.text-color3 {
+  color: var(--color3) !important;
+}
+
+.text-color4 {
+  color: var(--color4) !important;
+}
+
+.text-color5 {
+  color: var(--color5) !important;
+}
+
 /* .merriweather-light {
   font-family: "Merriweather", serif;
   font-weight: 300;
