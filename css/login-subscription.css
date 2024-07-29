@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;1,300&display=swap");
+
+html,
+body {
+  margin: 0;
+}
+
+.plan-card {
+  padding: 20px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.plan-card:hover {
+  background: -webkit-linear-gradient(to right, #6f0000, #200122);
+  background: linear-gradient(to right, #6f0000, #200122);
+  transform: scale(1.05);
+  color: white;
+  border-color: rgb(45, 13, 13);
+  border-width: 2px;
+}
+.plan-card:active {
+  transform: scale(0.95);
+}
+
+.price {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.button-card:hover {
+  background-color: #260808;
+  color: white;
+  border: none;
+  padding: 10px 10px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}

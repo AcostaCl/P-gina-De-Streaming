@@ -13,7 +13,8 @@
       src="https://kit.fontawesome.com/cda34ee0ad.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../css/login-subscription.css" />
     <title>Inicio y suscripción</title>
   </head>
   <body>
@@ -27,15 +28,10 @@
       >
         Iniciar Sesión
       </button>
-      <!-- Button trigger modal Registro -->
-      <button
-        type="button"
-        class="btn btn-primary"
-        data-bs-toggle="modal"
-        data-bs-target="#RegisterModal"
+      <!-- Button Planes -->
+      <a href="../pages/plans.html" class="btn btn-primary text-none"
+        >Suscribite a Wired</a
       >
-        Suscribite
-      </button>
     </header>
     <main></main>
     <!-- Modal -->
@@ -99,138 +95,7 @@
 
           <div class="modal-footer">
             <p>¿Primera vez en Wired?</p>
-            <button
-              type="button"
-              class="btn btn-link"
-              data-bs-toggle="modal"
-              data-bs-target="#RegisterModal"
-              data-bs-dismiss="modal"
-            >
-              Suscribite acá
-            </button>
-
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Cerrar
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal registro -->
-    <div
-      class="modal fade"
-      id="RegisterModal"
-      tabindex="-1"
-      aria-labelledby="RegisterModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5" id="RegisterModalLabel">
-              Crea una cuenta
-            </h1>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-
-          <div class="modal-body">
-            <!-- FORMULARIO MODAL REGISTRO -->
-            <form>
-              <div class="row">
-                <div class="form-group mb-3 col-md-6">
-                  <label for="name">Nombre</label>
-                  <input
-                    type="name"
-                    class="form-control"
-                    maxlength="100"
-                    minlength="3"
-                    placeholder="Ingresa tu nombre"
-                    required
-                  />
-                </div>
-                <div class="form-group mb-3 col-md-6">
-                  <label for="name">Apellido</label>
-                  <input
-                    type="name"
-                    class="form-control"
-                    maxlength="100"
-                    minlength="3"
-                    placeholder="Ingresa tu apellido"
-                    required
-                  />
-                </div>
-                <div class="form-group mb-3">
-                  <label for="registerEmail">Correo electrónico</label>
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="registerEmail"
-                    placeholder="Ingresa tu correo"
-                    maxlength="60"
-                    required
-                  />
-                </div>
-                <div class="form-group mb-3">
-                  <label for="password">Contraseña</label>
-                  <input
-                    type="password"
-                    class="form-control"
-                    id="password"
-                    placeholder="Ingresa tu contraseña (mínimo 6 carácteres)"
-                    maxlength="40"
-                    minlength="6"
-                    required
-                  />
-                </div>
-                <div class="form-group mb-3">
-                  <label for="passwordConfirm">Confirmar contraseña</label>
-                  <input
-                    type="password"
-                    class="form-control"
-                    id="passwordConfirm"
-                    placeholder="Ingresa tu contraseña de nuevo"
-                    maxlength="40"
-                    minlength="6"
-                    required
-                  />
-                </div>
-                <div class="form-check mx-3 form-switch">
-                  <input type="checkbox" class="form-check-input" id="check1" />
-                  <label class="form-check-label" id="check1"
-                    >Acepto los términos y condiciones.</label
-                  >
-                </div>
-              </div>
-              <a
-                href="./subscription.html"
-                class="btn btn-link bg-secondary mt-3"
-                >Crear cuenta y continuar</a
-              >
-            </form>
-          </div>
-
-          <div class="modal-footer">
-            <p>¿Ya estás suscripto?</p>
-            <button
-              type="button"
-              class="btn btn-link"
-              data-bs-toggle="modal"
-              data-bs-target="#loginModal"
-              data-bs-dismiss="modal"
-            >
-              Inicia sesión acá
-            </button>
-
+            <a href="./plans.html" class="btn btn-link">Suscribite acá</a>
             <button
               type="button"
               class="btn btn-secondary"
