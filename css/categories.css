@@ -1,7 +1,21 @@
-
-.carousel-item img {
-    max-width: 445px;
-    max-height: 550px;
-    margin: 0 10px;
+/* .carousel-item {
+  display: flex;
+  justify-content: center;
+} */
+ .imagenpelicula img {
+    max-width: 200px;
+    max-height: 250px;
+    object-fit: cover;
   }
 
+  /* :root {
+    --max-h-img: max-height:50px;
+    --max-w-img: max-width:40px;
+  }
+
+  .max-h-img {
+    max-height: var(--max-h-img);
+  }
+  .max-w-img {
+    max-width: var(--max-w-img);
+  } */
