@@ -23,4 +23,16 @@ body {
 /* ? media queries //////////////////////////////////// */
 
 @media only screen and (min-width: 480px) {
+  .logo-wired {
+    width: 20%;
+  }
+
+  .contenedor-opciones {
+    display: flex;
+    justify-content: space-between;
+
+    .boton-user {
+      border-radius: 50%;
+    }
+  }
 }

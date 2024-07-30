@@ -19,12 +19,10 @@
   <body>
     <header>
       <nav class="navbar navbar-expand-md bg-body-tertiary">
-        <div class="container-fluid contenedor-nav">
-          <div class="contenedor-logo">
-            <a class="navbar-brand logo-wired" href="/index.html"
-              ><img src="/assets/img/logo-wired.png" alt="logo" class="w-100"
-            /></a>
-          </div>
+        <div class="container-fluid">
+          <a class="navbar-brand logo-wired" href="/index.html"
+            ><img src="/assets/img/logo-wired.png" alt="logo" class="w-100"
+          /></a>
 
           <!-- BOTON HAMBURGUESA -->
           <button
@@ -38,7 +36,10 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div
+            class="collapse navbar-collapse contenedor-opciones"
+            id="navbarSupportedContent"
+          >
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#"
@@ -72,54 +73,53 @@
                 </ul>
               </li>
             </ul>
-            <div class="contenedor-modal">
-              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <!-- Boton de inicio de sesion (MODAL) -->
-                  <button
-                    type="button"
-                    class="btn btn-danger d-none d-md-block"
-                    data-bs-toggle="modal"
-                    data-bs-target="#exampleModalLog"
-                  >
-                    <i class="fa-solid fa-user"></i>
-                  </button>
-                </li>
-                <li class="nav-item">
-                  <button
-                    type="button"
-                    class="btn text-danger px-0 p-lg-2 d-md-none"
-                    data-bs-toggle="modal"
-                    data-bs-target="#exampleModalLog"
-                  >
-                    Iniciar sesion
-                  </button>
-                </li>
 
-                <li class="nav-item">
-                  <!-- Boton de Registro (MODAL) -->
-                  <button
-                    type="button"
-                    class="btn text-danger px-0 p-lg-2 d-md-none"
-                    data-bs-toggle="modal"
-                    data-bs-target="#exampleModalReg"
-                  >
-                    Suscribirse
-                  </button>
-                </li>
-                <li class="nav-item">
-                  <!-- Boton de Registro (MODAL) -->
-                  <button
-                    type="button"
-                    class="btn btn-danger px-0 p-lg-2 d-none d-md-block"
-                    data-bs-toggle="modal"
-                    data-bs-target="#exampleModalReg"
-                  >
-                    Suscribirse
-                  </button>
-                </li>
-              </ul>
-            </div>
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <!-- Boton de inicio de sesion (MODAL) -->
+                <button
+                  type="button"
+                  class="btn btn-danger mx-1 d-none d-md-block boton-user"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModalLog"
+                >
+                  <i class="fa-solid fa-user"></i>
+                </button>
+              </li>
+              <li class="nav-item">
+                <button
+                  type="button"
+                  class="btn text-danger px-0 p-lg-2 d-md-none"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModalLog"
+                >
+                  Iniciar sesion
+                </button>
+              </li>
+
+              <li class="nav-item">
+                <!-- Boton de Registro (MODAL) -->
+                <button
+                  type="button"
+                  class="btn text-danger px-0 p-lg-2 d-md-none boton-suscribirse"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModalReg"
+                >
+                  Suscribirse
+                </button>
+              </li>
+              <li class="nav-item">
+                <!-- Boton de Registro (MODAL) -->
+                <button
+                  type="button"
+                  class="btn btn-danger px-2 d-none d-md-block"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModalReg"
+                >
+                  Suscribirse
+                </button>
+              </li>
+            </ul>
           </div>
         </div>
       </nav>
