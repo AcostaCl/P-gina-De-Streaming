@@ -2,13 +2,25 @@
   display: flex;
   justify-content: center;
 } */
- .imagenpelicula img {
-    max-width: 200px;
-    max-height: 250px;
-    object-fit: cover;
-  }
+.imagenpelicula img {
+  max-width: 200px;
+  max-height: 250px;
+  object-fit: cover;
+}
 
-  /* :root {
+.button-card {
+  transform: scale(0.2 linear);
+  border-radius: 12px;
+}
+
+.button-card:hover {
+  background-color: #260808;
+  transform: scale(1.2);
+  box-shadow: 0 4px 8px ;
+}
+
+
+/* :root {
     --max-h-img: max-height:50px;
     --max-w-img: max-width:40px;
   }
