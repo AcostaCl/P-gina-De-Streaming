@@ -5,7 +5,7 @@ body {
   margin: 0;
 }
 .body-backg {
-  background: linear-gradient(-45deg, #301c1c, #4d2626, #391616, #632020);
+  background: linear-gradient(-45deg, #211212, #4d2626, #230c0c, #632020);
   background-size: 400% 400%;
   animation: gradient 10s ease infinite;
 }
