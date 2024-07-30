@@ -16,15 +16,11 @@ body {
   margin: 0;
 }
 
-#btn-user {
-  border-radius: 50%;
+.logo-wired {
+  width: 30%;
 }
 
-#btn-desplegable {
-  display: flex;
-  width: 12%;
-}
+/* ? media queries //////////////////////////////////// */
 
-#logo {
-  width: 50px;
+@media only screen and (min-width: 480px) {
 }

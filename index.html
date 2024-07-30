@@ -18,42 +18,45 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand w-50" href="/index.html"
-            ><img src="/assets/img/logo-wired.png" alt="logo" class="w-25"
-          /></a>
+      <nav class="navbar navbar-expand-md bg-body-tertiary">
+        <div class="container-fluid contenedor-nav">
+          <div class="contenedor-logo">
+            <a class="navbar-brand logo-wired" href="/index.html"
+              ><img src="/assets/img/logo-wired.png" alt="logo" class="w-100"
+            /></a>
+          </div>
+
+          <!-- BOTON HAMBURGUESA -->
           <button
-            class="navbar-toggler bg-body-secondary"
-            id="btn-desplegable"
+            class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
-            data-bs-target="#navbarScroll"
-            aria-controls="navbarScroll"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarScroll">
-            <ul
-              class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll text-center"
-              style="--bs-scroll-height: 200px"
-            >
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a
-                  class="nav-link active text-white"
-                  aria-current="page"
-                  href="#"
-                  >Home</a
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Inicio</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="#">Series</a>
+                <a class="nav-link" href="">Quienes Somos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="" target="_blank">Series</a>
               </li>
               <li class="nav-item dropdown">
                 <a
-                  class="nav-link dropdown-toggle text-white"
+                  class="nav-link dropdown-toggle"
                   href="#"
                   role="button"
                   data-bs-toggle="dropdown"
@@ -61,201 +64,61 @@
                 >
                   Películas
                 </a>
-                <ul class="dropdown-menu bg-dark">
-                  <li>
-                    <a class="dropdown-item text-white" href="#">Acción</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item text-white" href="#">Comedia</a>
-                  </li>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Drama</a></li>
+                  <li><a class="dropdown-item" href="#">Comedia</a></li>
                   <li><hr class="dropdown-divider" /></li>
-                  <li>
-                    <a class="dropdown-item text-white" href="#">ESTRENOS</a>
-                  </li>
+                  <li><a class="dropdown-item" href="#">Estrenos</a></li>
                 </ul>
               </li>
-              <li class="nav-item">
-                <a class="nav-link disabled text-white-50" aria-disabled="true"
-                  >Contacto</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled text-white-50" aria-disabled="true"
-                  >Nosotros</a
-                >
-              </li>
             </ul>
+            <div class="contenedor-modal">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <!-- Boton de inicio de sesion (MODAL) -->
+                  <button
+                    type="button"
+                    class="btn btn-danger d-none d-md-block"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModalLog"
+                  >
+                    <i class="fa-solid fa-user"></i>
+                  </button>
+                </li>
+                <li class="nav-item">
+                  <button
+                    type="button"
+                    class="btn text-danger px-0 p-lg-2 d-md-none"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModalLog"
+                  >
+                    Iniciar sesion
+                  </button>
+                </li>
 
-            <!-- Button trigger modal -->
-            <button
-              type="button"
-              class="btn btn-transparent"
-              data-bs-toggle="modal"
-              data-bs-target="#exampleModal"
-            >
-              <i
-                class="fa-solid fa-magnifying-glass"
-                style="color: #ffffff"
-              ></i>
-            </button>
-
-            <!-- Modal -->
-            <div
-              class="modal fade"
-              id="exampleModal"
-              tabindex="-1"
-              aria-labelledby="exampleModalLabel"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">
-                      Encuentra tu favorito
-                    </h1>
-
-                    <button
-                      type="button"
-                      class="btn-close"
-                      data-bs-dismiss="modal"
-                      aria-label="Close"
-                    ></button>
-                  </div>
-                  <div class="modal-body">
-                    <form class="d-flex" role="search">
-                      <input
-                        class="form-control me-2"
-                        type="search"
-                        placeholder="Títulos, personas, géneros"
-                        aria-label="Search"
-                      />
-                    </form>
-                  </div>
-                  <div class="modal-footer">
-                    <button
-                      type="button"
-                      class="btn btn-secondary"
-                      data-bs-dismiss="modal"
-                    >
-                      Cerrar
-                    </button>
-                    <button type="button" class="btn btn-danger">Buscar</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Button trigger modal -->
-            <button
-              type="button"
-              class="btn btn-danger mx-2"
-              id="btn-user"
-              data-bs-toggle="modal"
-              data-bs-target="#exampleModal"
-            >
-              <i class="fa-solid fa-user"></i>
-            </button>
-
-            <!-- Modal -->
-            <div
-              class="modal fade"
-              id="exampleModal"
-              tabindex="-1"
-              aria-labelledby="exampleModalLabel"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">
-                      Encuentra tu favorito
-                    </h1>
-
-                    <button
-                      type="button"
-                      class="btn-close"
-                      data-bs-dismiss="modal"
-                      aria-label="Close"
-                    ></button>
-                  </div>
-                  <div class="modal-body">
-                    <form class="d-flex" role="search">
-                      <input
-                        class="form-control me-2"
-                        type="search"
-                        placeholder="Títulos, personas, géneros"
-                        aria-label="Search"
-                      />
-                    </form>
-                  </div>
-                  <div class="modal-footer">
-                    <button
-                      type="button"
-                      class="btn btn-secondary"
-                      data-bs-dismiss="modal"
-                    >
-                      Cerrar
-                    </button>
-                    <button type="button" class="btn btn-danger">Buscar</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Button trigger modal -->
-            <button
-              type="button"
-              class="btn btn-danger mx-2"
-              data-bs-toggle="modal"
-              data-bs-target="#exampleModal"
-            >
-              SUSCRIBETE
-            </button>
-
-            <!-- Modal -->
-            <div
-              class="modal fade"
-              id="exampleModal"
-              tabindex="-1"
-              aria-labelledby="exampleModalLabel"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">
-                      Encuentra tu favorito
-                    </h1>
-
-                    <button
-                      type="button"
-                      class="btn-close"
-                      data-bs-dismiss="modal"
-                      aria-label="Close"
-                    ></button>
-                  </div>
-                  <div class="modal-body">
-                    <form class="d-flex" role="search">
-                      <input
-                        class="form-control me-2"
-                        type="search"
-                        placeholder="Títulos, personas, géneros"
-                        aria-label="Search"
-                      />
-                    </form>
-                  </div>
-                  <div class="modal-footer">
-                    <button
-                      type="button"
-                      class="btn btn-secondary"
-                      data-bs-dismiss="modal"
-                    >
-                      Cerrar
-                    </button>
-                    <button type="button" class="btn btn-danger">Buscar</button>
-                  </div>
-                </div>
-              </div>
+                <li class="nav-item">
+                  <!-- Boton de Registro (MODAL) -->
+                  <button
+                    type="button"
+                    class="btn text-danger px-0 p-lg-2 d-md-none"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModalReg"
+                  >
+                    Suscribirse
+                  </button>
+                </li>
+                <li class="nav-item">
+                  <!-- Boton de Registro (MODAL) -->
+                  <button
+                    type="button"
+                    class="btn btn-danger px-0 p-lg-2 d-none d-md-block"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModalReg"
+                  >
+                    Suscribirse
+                  </button>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
