@@ -19,6 +19,15 @@
   box-shadow: 0 4px 8px ;
 }
 
+.card-text {
+  color: var(--color5);
+  font-weight: bold;
+  
+}
+.card > a {
+  text-decoration: none;
+}
+
 
 /* :root {
     --max-h-img: max-height:50px;
