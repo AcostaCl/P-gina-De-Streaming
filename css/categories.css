@@ -28,6 +28,25 @@
   text-decoration: none;
 }
 
+.col-md-1 i {
+  transition: transform 0.2s ease-in-out;
+}
+
+.col-md-1 i:hover {
+  transform: scale(1.2);
+}
+
+.card {
+  transition: transform 0.2s ease-in-out;
+  box-shadow: 0 4px 8px var(--color4);
+  box-shadow: 0 0 5px white, 0 0 25px white;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  color: var(--color4);
+}
+
 
 /* :root {
     --max-h-img: max-height:50px;
