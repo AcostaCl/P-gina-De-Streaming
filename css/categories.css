@@ -6,12 +6,13 @@
   border-top-right-radius: 4px;
 }
 
-.button-card {
+.btn-option {
   transform: scale(0.2 linear);
   border-radius: 12px;
+  font-size: 25px;
 }
 
-.button-card:hover {
+.btn-option:hover {
   background-color: #260808;
   transform: scale(1.2);
   box-shadow: 0 4px 8px;
