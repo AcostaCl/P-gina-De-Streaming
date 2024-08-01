@@ -18,31 +18,17 @@
   box-shadow: 0 4px 8px;
 }
 
-.card-text {
-  color: var(--color5);
-  font-weight: bold;
-}
-.card > a {
-  text-decoration: none;
-}
-
-.vermas i {
-  transition: transform 0.2s ease-in-out;
-
-}
-
-.vermas i:hover {
-  transform: scale(1.3);
-}
-
-.card {
+.movie {
   transition: transform 0.2s ease-in-out;
 }
 
-.card:hover {
+.movie:hover {
   transform: scale(1.03);
   box-shadow: 0 0 10px var(--color4), 0 0 25px var(--color4);
+}
 
+.movie > a {
+  text-decoration: none;
 }
 
 .movie-infos {
@@ -72,9 +58,16 @@
   margin-left: 5px;
 }
 
-
 .movie-item-title {
   font-size: 1.2rem;
   font-weight: 700;
   padding: 0px;
+}
+
+.vermas i {
+  transition: transform 0.2s ease-in-out;
+}
+
+.vermas i:hover {
+  transform: scale(1.3);
 }
