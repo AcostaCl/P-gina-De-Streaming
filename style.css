@@ -14,10 +14,24 @@
 
 body {
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main {
+  min-height: 80vh;
 }
 
 .logo-wired {
   width: 30%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+ul {
+  list-style: none;
 }
 
 /* ? media queries //////////////////////////////////// */
@@ -27,12 +41,36 @@ body {
     width: 20%;
   }
 
+  .cont-log-foot {
+    width: 120%;
+    .log-footer {
+      width: 200px;
+    }
+  }
+
   .contenedor-opciones {
     display: flex;
     justify-content: space-between;
 
     .boton-user {
       border-radius: 50%;
+    }
+  }
+  .contenedor-app {
+    width: 30%;
+    .contenedor-ap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .cont-apps {
+        display: flex;
+        justify-content: center;
+        .apps {
+          width: 70%;
+          margin: 5px;
+        }
+      }
     }
   }
 }
@@ -45,5 +83,13 @@ body {
   .contenedor-opciones {
     display: flex;
     justify-content: space-around;
+  }
+  footer {
+    .contenedor-footer {
+      width: 100%;
+    }
+    .contenedor-app {
+      width: 30%;
+    }
   }
 }
