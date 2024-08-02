@@ -18,9 +18,18 @@ background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 50%, rgba(255,
   padding: 10px;
 }
 
-/* .btn-carousel span {
-  background:var(--color4);
-} */
+.btn-carousel {
+  width: 30px;
+  height: 30px;
+  padding: 20px;
+  border-radius: 50%;
+  background-color: black;
+  transition: transform 0.5s linear;
+}
+
+.btn-carousel:hover {
+  transform: scale(1.2);
+}
 
 .imagenpelicula img {
   width: 100%;
@@ -90,6 +99,12 @@ background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 50%, rgba(255,
 
 .movie-item-title {
   font-size: 1.2rem;
+  font-weight: 700;
+  padding: 0px;
+}
+
+.movie-item-title-carousel {
+  font-size: 1.6rem;
   font-weight: 700;
   padding: 0px;
 }
