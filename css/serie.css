@@ -15,7 +15,7 @@
 
 .movie-title {
   font-weight: 1000;
-  background-image: linear-gradient(45deg, #8630bf, #d95043);
+  background-image: linear-gradient(45deg, #8630bf, #0d0d0d);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -53,17 +53,55 @@
   color: #d95043;
 }
 
+.title-season {
+    font-size: x-large;
+    background-color: var(--color4);
+}
+
+.title-season:hover {
+    box-shadow: 0 0 5px #d95043, 0 0 25px #d95043;}
+
+
+
 .title-accordion {
-  font-size: large;
+  font-size: x-large;
+  background-color: rgba(0,0,0, 0.8);
+  width: 40%;
+  transform: scale(0.2 linear);
+  border-radius: 12px;
 
 }
 .title-accordion:hover {
-  text-decoration: underline;
+    transform: scale(1.05);
+    box-shadow: 0 0 5px #d95043, 0 0 25px #d95043;
 }
 
 .title-accordion:active {
-  color: #d95043;
+    box-shadow: 0 4px 8px #d95043;
+    box-shadow: 0 0 5px #d95043, 0 0 25px #d95043;
+  }
+
+/* .btn-option {
+  transform: scale(0.2 linear);
+  border-radius: 12px;
+  font-size: 25px;
 }
+
+.btn-option:hover {
+  background-color: #260808;
+  transform: scale(1.2);
+  box-shadow: 0 4px 8px;
+} */
+
+
+
+.chapter {
+    transition: transform 0.1s linear;
+  }
+  .chapter:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 5px white, 0 0 25px white;
+  }
 
 .data-info-title {
   color: #d95043;
@@ -76,6 +114,7 @@
 
 .details-info a {
   text-decoration: none;
+  color: white;
 }
 
 .suggestion {
@@ -91,7 +130,7 @@
 
 
 body {
-  background-image: url(/assets/img/fondoleconcert.jpg);
+  background-image: url(/assets/img/HOTDbanner.jpg);
   width: 100%;
   height: 100vh;
   background-repeat: repeat;
