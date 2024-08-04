@@ -108,11 +108,20 @@
   color: white;
 }
 
+.details-infos a {
+    text-decoration: none;
+    color: white;
+}
+
+.details-infos a:hover {
+    text-decoration: underline;
+  }
+
 .suggestion {
   transition: transform 0.1s linear;
   border: 1px solid black;
   border-radius: 7px;
-  
+  height: 200px;
 }
 .suggestion:hover {
   transform: scale(1.03);
