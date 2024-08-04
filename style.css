@@ -115,5 +115,35 @@ ul {
     .contenedor-app {
       width: 30%;
     }
+    .contenedor-logo-footer {
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: center;
+
+      .cont-log-foot {
+        width: 80%;
+        height: 40%;
+      }
+    }
+    .contenedor-opciones-footer {
+      display: flex;
+    }
+    .contenedor-legales {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      a {
+        font-size: large;
+      }
+    }
+
+    .cont-apps {
+      display: flex;
+    }
+  }
+
+  .redes {
+    font-size: x-large;
   }
 }
