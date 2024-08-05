@@ -42,7 +42,7 @@ background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 50%, rgba(255,
 .imagenbanner img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: fill;
 }
 
 .btn-option {
@@ -52,13 +52,14 @@ background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 50%, rgba(255,
 }
 
 .btn-option:hover {
-  background-color: #260808;
+  background-color: #d95043;
   transform: scale(1.2);
   box-shadow: 0 4px 8px;
 }
 
 .movie {
   transition: transform 0.2s ease-in-out;
+  width: 100%;
 }
 
 .movie:hover {
@@ -115,4 +116,26 @@ background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 50%, rgba(255,
 
 .vermas i:hover {
   transform: scale(1.3);
+}
+
+.avermas {
+text-decoration: none;
+color: grey;
+margin-left: 7px;
+font-size: larger;
+}
+
+.avermas:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+body {
+  background: rgb(38,1,32);
+  background: linear-gradient(180deg, rgba(38,1,32,1) 0%, rgba(57,5,64,1) 50%, rgba(13,13,13,1) 100%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  margin: 0;
 }
