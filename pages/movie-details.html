@@ -62,9 +62,13 @@
           </div>
           <div class="col-6 d-flex my-4 justify-content-around">
             <div class="d-flex align-items-center play-trailer flex-column m-2">
-              <a href="/pages/error-404.html">
+              <button
+                class="trailermodal"
+                data-bs-toggle="modal"
+                data-bs-target="#moviereproductor"
+              >
                 <i class="fa-solid fa-play fa-2x" style="color: #d95043"></i>
-              </a>
+              </button>
               <p>Reproducir</p>
             </div>
             <div class="d-flex align-items-center play-trailer flex-column m-2">
@@ -89,7 +93,6 @@
           </div>
           <div class="col-12 my-5">
             <details>
-              
               <summary class="title-accordion d-flex justify-content-center">
                 Información
               </summary>
@@ -245,6 +248,42 @@
               height="315"
               src="https://www.youtube.com/embed/HCQX3UAQm0g?si=PiwzFw2c-hkaQc08"
               title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="moviereproductor"
+      tabindex="-1"
+      aria-labelledby="moviereproductorLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content bg-modal text-light">
+          <div class="modal-header">
+            <h2 class="modal-title fs-5 anton-regular" id="moviereproductorLabel">
+              El Concierto
+            </h2>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <iframe
+              src="https://drive.google.com/file/d/1A-VPTJTGgFXPc0BbkVq1uqatLoXg9Ex_/preview"
+              width="560"
+              height="315"
+              allow="autoplay"
+              class="w-100"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerpolicy="strict-origin-when-cross-origin"
