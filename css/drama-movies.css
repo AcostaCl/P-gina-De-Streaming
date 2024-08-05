@@ -1,32 +1,25 @@
 body {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #260120, #390540, #8630bf, #d95043, #0d0d0d);
-    color: white;
+    background: rgb(38,1,32);
+    background: linear-gradient(180deg, rgba(38,1,32,1) 0%, rgba(57,5,64,1) 50%, rgba(13,13,13,1) 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
     margin: 0;
-    padding: 0;
   }
   
-  .container {
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  h1 {
-    text-align: center;
-  }
   
   .filters {
     text-align: center;
     margin-bottom: 20px;
   }
   
-  .filter-button {
+  .filter-select {
     background-color: #8630bf;
     border: none;
     color: white;
-    padding: 10px 20px;
-    margin: 0 5px;
+    padding: 10px;
+    border-radius: 5px;
     cursor: not-allowed; /* Deshabilitado para indicar que no son funcionales */
   }
   
@@ -42,3 +35,56 @@ body {
     border-radius: 5px;
   }
   
+
+
+  .page-item {
+    margin: 0 5px;
+  }
+  
+  .pagedisabled .page-link {
+    color: #6c757d;
+    pointer-events: none;
+    cursor: not-allowed;
+    background-color: #343a40;
+    border-color: #343a40;
+  }
+  
+  .page-item .page-link {
+    position: relative;
+    display: block;
+    padding: 0.5rem 0.75rem;
+    margin-left: -1px;
+    line-height: 1.25;
+    color: #007bff;
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+    text-decoration: none;
+    transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  }
+  
+  .page-item .page-link:hover {
+    color: #0056b3;
+    background-color: #e9ecef;
+    border-color: #dee2e6;
+  }
+  
+  .page-item.active .page-link {
+    z-index: 1;
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  .page-link {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .page-item:last-child .page-link {
+    border-radius: 0.25rem;
+  }
