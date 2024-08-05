@@ -7,6 +7,30 @@ body {
     height: 100vh;
     margin: 0;
   }
+
+  .btn-option {
+    transform: scale(0.2 linear);
+    border-radius: 12px;
+    font-size: 25px;
+  }
+  
+  .btn-option:hover {
+    background-color: #d95043;
+    transform: scale(1.2);
+    box-shadow: 0 4px 8px;
+  }
+
+  .btn-none {
+    transform: scale(0.2 linear);
+    border-radius: 12px;
+    font-size: 25px;
+  }
+
+  .btn-none:hover {
+    cursor: not-allowed;
+    background-color: black;
+    
+    }
   
   
   .filters {
@@ -20,7 +44,7 @@ body {
     color: white;
     padding: 10px;
     border-radius: 5px;
-    cursor: not-allowed; /* Deshabilitado para indicar que no son funcionales */
+    cursor: pointer;
   }
   
   .movie-list {
