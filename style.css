@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;1,300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap");
 
 :root {
   --color1: #260120;
@@ -21,7 +21,6 @@
   font-weight: 700;
   font-style: normal;
 }
-
 
 .bg-color1 {
   background-color: var(--color1);
@@ -70,33 +69,35 @@
 }
 
 .font2 {
-    font-family: "PT Serif", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
+  font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
-  .anton-sc-regular {
-    font-family: "Anton SC", sans-serif;
-    font-weight: 1000;
-    font-style: normal;
-  }  
+.anton-sc-regular {
+  font-family: "Anton SC", sans-serif;
+  font-weight: 1000;
+  font-style: normal;
+}
 
-  .anton-regular {
-    font-family: "Anton", sans-serif;
-    font-weight: 1000;
-    font-style: normal;
-  }
+.anton-regular {
+  font-family: "Anton", sans-serif;
+  font-weight: 1000;
+  font-style: normal;
+}
 
-  .bungee-outline-regular {
-    font-family: "Bungee Outline", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  
-  
+.bungee-outline-regular {
+  font-family: "Bungee Outline", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
 body {
+  background: rgb(38,1,32);
+  background: linear-gradient(180deg, rgba(38,1,32,1) 0%, rgba(57,5,64,1) 50%, rgba(13,13,13,1) 100%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
   margin: 0;
-  flex: 1;
 }
