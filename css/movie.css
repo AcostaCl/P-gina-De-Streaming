@@ -97,7 +97,7 @@
   transition: transform 0.1s linear;
   border: 1px solid black;
   border-radius: 7px;
-  height: 200px;
+  height: 175px;
   
 }
 .suggestion:hover {
@@ -105,9 +105,14 @@
   border-color: white;
 }
 
+/* .suggestion > a > img {
+  object-fit: fill;
+  width: 200%;
+} */
+
 
 body {
-  background-image: url(/assets/img/fondoleconcert.jpg);
+  background-image: url(/assets/img/bgleconcert.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
