@@ -13,17 +13,222 @@
       src="https://kit.fontawesome.com/cda34ee0ad.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="/style.css" />
     <title>Inicio</title>
   </head>
   <body>
-    <header></header>
+    <header>
+      <nav class="navbar navbar-expand-md bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand logo-wired" href="/index.html"
+            ><img src="/assets/img/logo-wired.png" alt="logo" class="w-100"
+          /></a>
+
+          <!-- BOTON HAMBURGUESA -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse contenedor-opciones"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">Quienes Somos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="" target="_blank">Series</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Películas
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Drama</a></li>
+                  <li><a class="dropdown-item" href="#">Comedia</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="#">Estrenos</a></li>
+                </ul>
+              </li>
+            </ul>
+
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 mx-lg-3">
+              <li class="nav-item">
+                <!-- Boton de inicio de sesion (MODAL) -->
+                <button
+                  type="button"
+                  class="btn btn-danger mx-1 mx-lg-2 d-none d-md-block boton-user"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModalLog"
+                >
+                  <i class="fa-solid fa-user"></i>
+                </button>
+              </li>
+              <li class="nav-item">
+                <button
+                  type="button"
+                  class="btn text-danger px-0 p-lg-2 d-md-none"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModalLog"
+                >
+                  Iniciar sesion
+                </button>
+              </li>
+
+              <li class="nav-item">
+                <!-- Boton de Registro (MODAL) -->
+                <button
+                  type="button"
+                  class="btn text-danger px-0 p-lg-2 d-md-none boton-suscribirse"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModalReg"
+                >
+                  Suscribirse
+                </button>
+              </li>
+              <li class="nav-item">
+                <!-- Boton de Registro (MODAL) -->
+                <button
+                  type="button"
+                  class="btn btn-danger px-2 d-none d-md-block"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModalReg"
+                >
+                  Suscribirse
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
     <main></main>
+
+    <footer class="bg-dark m-0 pt-md-4">
+      <div class="row contenedor-footer m-0">
+        <article
+          class="col-sm-12 col-md-4 col-lg-4 text-center contenedor-logo-footer"
+        >
+          <div class="cont-log-foot">
+            <a href="/index.html"
+              ><img
+                src="/assets/img/logo-wired.png"
+                alt="logo"
+                class="w-100 log-footer"
+            /></a>
+          </div>
+          <div class="text-center redes mt-lg-3">
+            <a href="" target="_blank" class="text-secondary"
+              ><i class="fa-brands fa-square-facebook"></i
+            ></a>
+            <a href="" target="_blank" class="text-secondary"
+              ><i class="fa-brands fa-square-instagram"></i
+            ></a>
+            <a href="" target="_blank" class="text-secondary"
+              ><i class="fa-brands fa-square-twitter"></i
+            ></a>
+            <a href="" target="_blank" class="text-secondary"
+              ><i class="fa-brands fa-twitch"></i
+            ></a>
+          </div>
+        </article>
+        <article
+          class="col-sm-12 col-md-4 col-lg-4 my-4 contenedor-opciones-footer"
+        >
+          <div class="row">
+            <div class="col-6 contenedor-legales p-md-0">
+              <ul>
+                <li>
+                  <a href="/index.html" class="text-secondary">Inicio</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" class="text-secondary"
+                    >Estrenos</a
+                  >
+                </li>
+                <li>
+                  <a href="#" target="_blank" class="text-secondary"
+                    >Nosotros</a
+                  >
+                </li>
+                <li>
+                  <a href="#" target="_blank" class="text-secondary"
+                    >Contacto</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-6 contenedor-legales p-md-0">
+              <ul>
+                <li>
+                  <a href="#" target="_blank" class="text-secondary"
+                    >Políticas y Privacidad</a
+                  >
+                </li>
+                <li>
+                  <a href="#" target="_blank" class="text-secondary"
+                    >Terminos y Condiciones</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+        <article
+          class="col-sm-12 col-md-4 col-lg-4 text-center contenedor-app mt-md-4 p-lg-0"
+        >
+          <div class="contenedor-ap px-5 px-md-1">
+            <h5 class="text-secondary mb-3">Descarga la App</h5>
+            <div class="row mb-5 cont-apps">
+              <div class="col-6 col-md-12 apps">
+                <a href="#"
+                  ><img
+                    src="/assets/img/badge-apple-store.svg"
+                    alt=""
+                    class="w-100"
+                /></a>
+              </div>
+              <div class="col-6 col-md-12 apps">
+                <a href="#"
+                  ><img
+                    src="/assets/img/google-play-badge-bb.svg"
+                    alt=""
+                    class="w-100"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </footer>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <footer></footer>
   </body>
 </html>
