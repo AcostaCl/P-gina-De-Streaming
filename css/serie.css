@@ -7,7 +7,7 @@
 }
 
 .info {
-  background-color: rgba(0,0,0,0.3);
+  background-color: rgba(0, 0, 0, 0.6);
   color: white;
   width: 100%;
   min-height: auto;
@@ -38,7 +38,7 @@
 }
 
 .bg-modal {
-  background: linear-gradient(80deg, #260120, #8630bf);;
+  background: linear-gradient(80deg, #260120, #8630bf);
 }
 
 .favourite {
@@ -117,11 +117,17 @@
     text-decoration: underline;
   }
 
+
+.details-infos a:hover {
+  text-decoration: underline;
+}
+
 .suggestion {
   transition: transform 0.1s linear;
   border: 1px solid black;
   border-radius: 7px;
   height: 200px;
+  height: 175px;
 }
 .suggestion:hover {
   transform: scale(1.03);
