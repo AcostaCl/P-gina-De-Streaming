@@ -69,6 +69,13 @@
   }
   .card-img {
     height: 200px;
+
+    img {
+      border-radius: 16px;
+      height: 100%;
+      object-fit: cover;
+      width: 100%;
+    }
   }
 }
 
@@ -89,4 +96,20 @@
 }
 
 @media screen and (max-width: 480px) {
+  .botones-pelicula-contenedor {
+    flex-direction: column;
+  }
+
+  .cards-elenco {
+    align-items: center;
+    border: 2px solid rgba(255, 255, 255, 0.116);
+    flex-direction: row;
+    .card-img {
+      height: 32px;
+      width: 32px;
+      img {
+        border-radius: 50%;
+      }
+    }
+  }
 }
