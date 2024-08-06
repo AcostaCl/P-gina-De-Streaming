@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
 
 /* .merriweather-light {
   font-family: "Merriweather", serif;
@@ -12,8 +13,24 @@
     font-style: normal;
   } */
 
+/* font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal; */
+
+:root {
+  --fuente-primaria: "DM Sans", sans-serif;
+  --fuente-secundaria: "PT Serif", serif;
+  --color-primario: #0d0d0d;
+  --color2: #260120;
+  --color3: rgb(207, 5, 5);
+}
+
 body {
   margin: 0;
+  padding: 0;
+  background: var(--color-primario);
+  font-family: var(--fuente-primaria);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -28,10 +45,31 @@ main {
 
 a {
   text-decoration: none;
-  color: black;
 }
+
 ul {
   list-style: none;
+}
+
+header {
+  border-bottom: 2px solid rgba(204, 204, 204, 0.942);
+  background: linear-gradient(
+    to bottom,
+    rgba(23, 23, 22, 0.675),
+    rgba(207, 5, 5, 0.086)
+  );
+  position: fixed;
+  z-index: 1;
+
+  i {
+    color: white;
+  }
+
+  .contenedor-opciones {
+    a {
+      color: white;
+    }
+  }
 }
 
 .contenedor-logo-footer {

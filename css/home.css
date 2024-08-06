@@ -1,0 +1,44 @@
+.contenedor-vista {
+  margin: auto;
+  max-width: 1399px;
+}
+
+.padding-cont {
+  padding: 72px 0px;
+}
+
+.padding-cont-botton {
+  padding-bottom: 72px;
+}
+
+.ul-contenido {
+  li {
+    a {
+      position: relative;
+      text-transform: uppercase;
+    }
+    a:hover {
+      color: var(--color3);
+    }
+    a:before,
+    a:after {
+      background-color: var(--color3);
+      content: "";
+      height: 3px;
+      position: absolute;
+      width: 0;
+      bottom: -3px;
+      transition: width 0.3s ease-in-out;
+    }
+    a:before {
+      left: 0;
+    }
+    a:after {
+      right: 0;
+    }
+    a:hover:before,
+    a:hover:after {
+      width: 100%;
+    }
+  }
+}
