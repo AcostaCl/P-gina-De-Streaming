@@ -137,7 +137,7 @@
     </header>
     <main>
       <div class="poster-contenedor">
-        <figure>
+        <figure class="mb-0">
           <img
             src="/assets/img/bebeenpanales.jpg"
             alt="Poster Bebe en Pañales"
@@ -145,10 +145,10 @@
           />
         </figure>
       </div>
-      <section class="position-absolute top-0 mt-5">
-        <div class="contenedor-vista px-5">
+      <section class="detalles-contenedor position-relative">
+        <div class="contenedor-vista">
           <article class="padding-cont">
-            <figure class="">
+            <figure class="logo-pelicula mb-0">
               <img
                 src="/assets/img/bebeenpanaleslogo.png"
                 alt=""
@@ -157,7 +157,7 @@
             </figure>
           </article>
           <article class="resumen-pelicula">
-            <p>
+            <p class="mb-0">
               Un chico termina involucrado en un siniestro plan corporativo
               cuando sus padres llevan a casa a un bebé que solo habla de
               negocios cuando ellos no están.
@@ -173,7 +173,7 @@
             </div>
           </article>
           <section class="padding-cont">
-            <div>
+            <div class="botones-pelicula-contenedorrrrrrr d-flex gap-2">
               <button class="btn btn-danger button-play">
                 <i class="fa-solid fa-play"></i>
                 VER AHORA
@@ -184,49 +184,223 @@
               </button>
             </div>
           </section>
-          <section class="mt-4">
+          <section class="padding-cont-bottom">
             <h2 class="text-white fw-bolder">Elenco</h2>
-            <div class="row text-center elenco">
-              <div class="col-2">
-                <img src="/assets/img/alec_baldwin.jpeg" alt="" class="w-100" />
-                <p class="text-white mt-3">Alec Baldwin</p>
+            <div class="elenco-grid">
+              <div class="cards-elenco">
+                <figure class="card-img mb-0">
+                  <img
+                    src="/assets/img/alec_baldwin.jpeg"
+                    alt=""
+                    class="w-100"
+                  />
+                </figure>
+                <p class="text-white mb-0">Alec Baldwin</p>
               </div>
-              <div class="col-2">
-                <img
-                  src="/assets/img/james_marsden.jpeg"
-                  alt=""
-                  class="w-100"
-                />
-                <p class="text-white mt-3">James Marsden</p>
+              <div class="cards-elenco">
+                <figure class="card-img mb-0">
+                  <img
+                    src="/assets/img/james_marsden.jpeg"
+                    alt=""
+                    class="w-100"
+                  />
+                </figure>
+                <p class="text-white mb-0">James Marsden</p>
               </div>
-              <div class="col-2">
-                <img src="/assets/img/amy_sedaris.jpeg" alt="" class="w-100" />
-                <p class="text-white mt-3">Amy Sedaris</p>
+              <div class="cards-elenco">
+                <figure class="card-img mb-0">
+                  <img
+                    src="/assets/img/amy_sedaris.jpeg"
+                    alt=""
+                    class="w-100"
+                  />
+                </figure>
+                <p class="text-white mb-0">Amy Sedaris</p>
               </div>
-              <div class="col-2">
-                <img
-                  src="/assets/img/ariana_greenblatt-207411856304845-nm_large.jpg"
-                  alt=""
-                  class="w-100"
-                />
-                <p class="text-white mt-3">Ariana Greenblatt</p>
+              <div class="cards-elenco">
+                <figure class="card-img mb-0">
+                  <img
+                    src="/assets/img/ariana_greenblatt-207411856304845-nm_large.jpg"
+                    alt=""
+                    class="w-100"
+                  />
+                </figure>
+
+                <p class="text-white mb-0">Ariana Greenblatt</p>
               </div>
-              <div class="col-2">
-                <img
-                  src="/assets/img/jeff_goldblum-100365857941398-nm_large.jpg"
-                  alt=""
-                  class="w-100"
-                />
-                <p class="text-white mt-3">Jeff Goldblum</p>
+              <div class="cards-elenco">
+                <figure class="card-img mb-0">
+                  <img
+                    src="/assets/img/jeff_goldblum-100365857941398-nm_large.jpg"
+                    alt=""
+                    class="w-100"
+                  />
+                </figure>
+                <p class="text-white mb-0">Jeff Goldblum</p>
               </div>
-              <div class="col-2">
-                <img
-                  src="/assets/img/eva_longoria-096864800119208-nm_large.jpg"
-                  alt=""
-                  class="w-100"
-                />
-                <p class="text-white mt-3">Eva Longoria</p>
+              <div class="cards-elenco">
+                <figure class="card-img mb-0">
+                  <img
+                    src="/assets/img/eva_longoria-096864800119208-nm_large.jpg"
+                    alt=""
+                    class="w-100"
+                  />
+                </figure>
+                <p class="text-white mb-0">Eva Longoria</p>
               </div>
+            </div>
+          </section>
+          <section class="mt-4">
+            <h2 class="text-white fw-bolder">Películas recomendadas</h2>
+            <div id="carouselExample" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row">
+                    <div class="col-3 pelicula-zoom">
+                      <div class="card bg-transparent" style="width: 17rem">
+                        <img
+                          src="/assets/img/sweet-girl.avif"
+                          class="card-img-top"
+                          alt="Sweet Girl"
+                        />
+                        <div class="card-body position-absolute top-50">
+                          <h5 class="card-title text-white">Sweet Girl</h5>
+
+                          <a href="#" class="btn btn-outline-danger">Ver más</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-3 pelicula-zoom">
+                      <div class="card bg-transparent" style="width: 17rem">
+                        <img
+                          src="/assets/img/a-descubierto.avif"
+                          class="card-img-top"
+                          alt="A Descubierto"
+                        />
+                        <div class="card-body position-absolute top-50">
+                          <h5 class="card-title text-white">A Descubierto</h5>
+
+                          <a href="#" class="btn btn-outline-danger">Ver más</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-3 pelicula-zoom">
+                      <div class="card bg-transparent" style="width: 17rem">
+                        <img
+                          src="/assets/img/the-harder-they-fall.avif"
+                          class="card-img-top"
+                          alt="The Harder They Fall"
+                        />
+                        <div class="card-body position-absolute top-50">
+                          <h5 class="card-title text-white">
+                            The Harder They Fall
+                          </h5>
+
+                          <a href="#" class="btn btn-outline-danger">Ver más</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-3 pelicula-zoom">
+                      <div class="card bg-transparent" style="width: 17rem">
+                        <img
+                          src="/assets/img/centinela.avif"
+                          class="card-img-top"
+                          alt="Centinela"
+                        />
+                        <div class="card-body position-absolute top-50">
+                          <h5 class="card-title text-white">Centinela</h5>
+
+                          <a href="#" class="btn btn-outline-danger">Ver más</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-3 pelicula-zoom">
+                      <div class="card bg-transparent" style="width: 17rem">
+                        <img
+                          src="/assets/img/no-mires-arriba.avif"
+                          class="card-img-top"
+                          alt="No Mires Arriba"
+                        />
+                        <div class="card-body position-absolute top-50">
+                          <h5 class="card-title text-white">No Mires Arriba</h5>
+
+                          <a href="#" class="btn btn-outline-danger">Ver más</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-3 pelicula-zoom">
+                      <div class="card bg-transparent" style="width: 17rem">
+                        <img
+                          src="/assets/img/tick-tick-boom.avif"
+                          class="card-img-top"
+                          alt="Tick Tick Boom"
+                        />
+                        <div class="card-body position-absolute top-50">
+                          <h5 class="card-title text-white">Tick Tick Boom</h5>
+
+                          <a href="#" class="btn btn-outline-danger">Ver más</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-3 pelicula-zoom">
+                      <div class="card bg-transparent" style="width: 17rem">
+                        <img
+                          src="/assets/img/beckett.avif"
+                          class="card-img-top"
+                          alt="Beckett"
+                        />
+                        <div class="card-body position-absolute top-50">
+                          <h5 class="card-title text-white">Beckett</h5>
+
+                          <a href="#" class="btn btn-outline-danger">Ver más</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-3 pelicula-zoom">
+                      <div class="card bg-transparent" style="width: 17rem">
+                        <img
+                          src="/assets/img/punto-rojo.avif"
+                          class="card-img-top"
+                          alt="Punto Rojo"
+                        />
+                        <div class="card-body position-absolute top-50">
+                          <h5 class="card-title text-white">Punto Rojo</h5>
+
+                          <a href="#" class="btn btn-outline-danger">Ver más</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExample"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExample"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
           </section>
         </div>
@@ -277,10 +451,46 @@
       </div>
     </div>
 
-    <footer class="bg-dark m-0 pt-md-4">
-      <div class="row contenedor-footer m-0">
-        <article
-          class="col-sm-12 col-md-4 col-lg-4 text-center contenedor-logo-footer"
+    <footer class="bg-dark pt-5 pb-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-4 columnas">
+            <h4 class="text-uppercase mb-4 fw-bold text-danger">Compania</h4>
+            <ul class="px-0">
+              <li><a class="text-secondary" href="">Nosotros</a></li>
+              <li><a class="text-secondary" href="">Suscripción</a></li>
+              <li><a class="text-secondary" href="">Seguridad</a></li>
+            </ul>
+          </div>
+          <div class="col-4 columnas">
+            <h4 class="text-uppercase mb-4 fw-bold text-danger">Ayuda</h4>
+            <ul class="px-0">
+              <li><a class="text-secondary" href="">FAQ </a></li>
+              <li><a class="text-secondary" href="">Opcion de Pago</a></li>
+              <li><a class="text-secondary" href="">Perfiles</a></li>
+            </ul>
+          </div>
+          <div class="col-4 columnas">
+            <h4 class="text-uppercase mb-4 fw-bold text-danger">Seguinos</h4>
+            <div class="redes">
+              <a href="" target="_blank" class="text-secondary"
+                ><i class="fa-brands fa-square-facebook"></i
+              ></a>
+
+              <a href="" target="_blank" class="text-secondary"
+                ><i class="fa-brands fa-square-instagram"></i
+              ></a>
+
+              <a href="" target="_blank" class="text-secondary"
+                ><i class="fa-brands fa-square-twitter"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="row m-0">
+        <div
+          class="col-sm-12 col-md-4 col-lg-4 text-center contenedor-logo-footer mb-0"
         >
           <div class="cont-log-foot">
             <a href="/index.html"
@@ -304,9 +514,9 @@
               ><i class="fa-brands fa-twitch"></i
             ></a>
           </div>
-        </article>
-        <article
-          class="col-sm-12 col-md-4 col-lg-4 my-4 contenedor-opciones-footer"
+        </div>
+        <div
+          class="col-sm-12 col-md-4 col-lg-4 my-4 mb-0 contenedor-opciones-footer"
         >
           <div class="row">
             <div class="col-6 contenedor-legales p-md-0">
@@ -346,13 +556,13 @@
               </ul>
             </div>
           </div>
-        </article>
+        </div>
         <article
-          class="col-sm-12 col-md-4 col-lg-4 text-center contenedor-app mt-md-4 p-lg-0"
+          class="col-sm-12 col-md-4 col-lg-4 text-center contenedor-app mt-md-4 p-lg-0 mb-0"
         >
-          <div class="contenedor-ap px-5 px-md-1">
+          <div class="contenedor-ap px-5 px-md-1 mb-0">
             <h5 class="text-secondary mb-3">Descarga la App</h5>
-            <div class="row mb-5 cont-apps">
+            <div class="row mb-5 cont-apps mb-0">
               <div class="col-6 col-md-12 apps">
                 <a href="#"
                   ><img
@@ -372,7 +582,7 @@
             </div>
           </div>
         </article>
-      </div>
+      </div> -->
     </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
