@@ -1,0 +1,60 @@
+body {
+    background: rgb(38,1,32);
+    background: linear-gradient(180deg, rgba(38,1,32,1) 0%, rgba(57,5,64,1) 50%, rgba(13,13,13,1) 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    margin: 0;
+  }
+
+  .btn-option {
+    transform: scale(0.2 linear);
+    border-radius: 12px;
+    font-size: 25px;
+  }
+  
+  .btn-option:hover {
+    background-color: #d95043;
+    transform: scale(1.2);
+    box-shadow: 0 4px 8px;
+  }
+
+  .btn-none {
+    transform: scale(0.2 linear);
+    border-radius: 12px;
+    font-size: 25px;
+  }
+
+  .btn-none:hover {
+    cursor: not-allowed;
+    background-color: black;
+    
+    }
+  
+  
+  .filters {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .filter-select {
+    background-color: rgba(217, 80, 67,0.9);
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .movie-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .movie-item {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    border-radius: 5px;
+  }
