@@ -13,6 +13,10 @@
       src="https://kit.fontawesome.com/cda34ee0ad.js"
       crossorigin="anonymous"
     ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
     <link rel="stylesheet" href="../style.css" />
     <link rel="stylesheet" href="../css/contact-form.css" />
     <title>Formulario de contacto</title>
@@ -25,17 +29,73 @@
           <div class="row primer-form g-0">
             <div class="col-sm-12 col-lg-6">
               <section class="izquierda bg-primary">
-                <h2>contacto</h2>
+                <h2>Contacta con nosotros</h2>
+                <hr />
+                <form action="">
+                  <div class="mb-3">
+                    <label for="name" class="form-label">Tu nombre</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      placeholder="Ingrese su nombre"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="email" class="form-label"
+                      >Correo electrónico</label
+                    >
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      placeholder="nombre@ejemplo.com"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="textarea" class="form-label">Mensaje</label>
+                    <textarea
+                      class="form-control"
+                      id="textarea"
+                      rows="5"
+                      placeholder="Ingrese su mensaje aquí (máximo 300 carácteres)"
+                      minlength="25"
+                      maxlength="300"
+                      required
+                    ></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-dark">Enviar</button>
+                </form>
               </section>
             </div>
             <div class="col-sm-12 col-lg-6">
-              <section class="derecha bg-dark">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Excepturi officiis debitis dicta cum voluptatum quidem
-                  consequuntur quis amet, quas facilis id ipsa sit. Eligendi,
-                  quia iure. Ea fuga nostrum reprehenderit?
-                </p>
+              <section class="derecha bg-black">
+                <div class="logo d-flex justify-content-center">
+                  <img
+                    src="../assets/img/logo/22.png"
+                    alt="wired"
+                    class="logotipo"
+                  />
+                </div>
+                <div>
+                  <ul>
+                    <li class="text-light list-unstyled">
+                      <i class="bi bi-envelope-fill"></i>
+                      wiredcontact.us@gmail.com
+                    </li>
+                    <li class="text-light list-unstyled">
+                      <i class="bi bi-telephone-fill"></i> (000) 0000-000
+                    </li>
+                  </ul>
+                </div>
+                <div class="redes-sociales">
+                  <p class="text-light">Nuestras redes sociales</p>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-twitter-x"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                </div>
               </section>
             </div>
           </div>
