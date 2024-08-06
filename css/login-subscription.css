@@ -1,9 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;1,300&display=swap");
-
+* {
+  margin: 0;
+  padding: 0;
+}
 html,
 body {
-  margin: 0;
+  overflow-x: hidden;
 }
+
 .body-backg {
   background: linear-gradient(-45deg, #211212, #4d2626, #230c0c, #632020);
   background-size: 400% 400%;
@@ -25,8 +29,10 @@ body {
   background-color: rgb(37, 8, 8);
   backdrop-filter: blur(10px);
   border-radius: 10px;
-  padding: 30px;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .plan-card {
   padding: 20px;
