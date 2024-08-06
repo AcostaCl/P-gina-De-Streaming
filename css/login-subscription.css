@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;1,300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  overflow-x: hidden;
+}
+
+.body-backg {
+  background: linear-gradient(-45deg, #211212, #4d2626, #230c0c, #632020);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.form-cont {
+  background-color: rgb(37, 8, 8);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.plan-card {
+  padding: 20px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.plan-card:hover {
+  background: -webkit-linear-gradient(to right, #6f0000, #200122);
+  background: linear-gradient(to right, #6f0000, #200122);
+  transform: scale(1.05);
+  color: white;
+  border-color: rgb(45, 13, 13);
+  border-width: 2px;
+}
+.plan-card:active {
+  transform: scale(0.95);
+}
+
+.price {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.button-card:hover {
+  background-color: #260808;
+  color: white;
+  border: none;
+  padding: 10px 10px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
