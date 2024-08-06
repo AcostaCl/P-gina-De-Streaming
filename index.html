@@ -147,6 +147,51 @@
       </nav>
     </header>
     <main></main>
+    <!-- Modal con formulario -->
+    <div
+      class="modal fade"
+      id="exampleModalBus"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <!-- Aquí va el formulario -->
+            <form>
+              <div class="mb-3">
+                <label for="text" class="form-label"
+                  >Encuentra tu próxima:</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="text"
+                  placeholder="Película, Serie..."
+                  aria-describedby="buscsdorText"
+                  required
+                  maxlength="15"
+                />
+              </div>
+
+              <div class="d-flex justify-content-end">
+                <button type="submit" class="m-1 btn btn-danger">Buscar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <footer class="bg-dark m-0 pt-md-4">
       <div class="row contenedor-footer m-0">
         <article
