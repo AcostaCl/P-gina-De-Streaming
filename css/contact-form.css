@@ -15,7 +15,7 @@ body {
   }
 }
 .form-control {
-  border: black 1px solid;
+  border: rgb(6, 0, 0) 1px solid;
 }
 .body-contenedor {
   padding-top: 5%;
@@ -25,6 +25,8 @@ body {
 .form-contenedor {
   border-radius: 10px;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+  background-color: rgb(37, 8, 8);
+  backdrop-filter: blur(10px);
 }
 
 .button {
@@ -38,7 +40,7 @@ body {
   justify-content: center;
 }
 .icon-red {
-  color: rgb(1, 0, 0);
+  color: rgb(255, 255, 255);
   font-size: 40px;
   margin: 30px;
 }
@@ -48,4 +50,8 @@ p {
 
 li {
   margin: 10px;
+}
+
+hr {
+  color: white;
 }
