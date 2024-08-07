@@ -19,7 +19,7 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-md px-5">
+      <nav class="navbar navbar-expand-lg px-5">
         <div class="container-fluid">
           <a class="navbar-brand logo-wired" href="/index.html"
             ><img src="/assets/img/logo-wired.png" alt="logo" class="w-100"
@@ -27,7 +27,7 @@
 
           <!-- BOTON HAMBURGUESA -->
           <button
-            class="navbar-toggler"
+            class="navbar-toggler bg-secondary-subtle boton-hamburguesa"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent"
@@ -49,7 +49,7 @@
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="" target="_blank">SERIES</a>
+                <a class="nav-link" href="#" target="_blank">SERIES</a>
               </li>
 
               <li class="nav-item">
@@ -57,14 +57,14 @@
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="#"
+                <a class="nav-link" href="#" target="_blank"
                   ><i class="fa-solid fa-plus"></i> MI LISTA</a
                 >
               </li>
             </ul>
 
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 mx-lg-3">
-              <li class="nav-item">
+              <li class="nav-item my-md-1">
                 <!-- Boton BUSQUEDA  (MODAL) -->
                 <button
                   type="button"
@@ -86,7 +86,7 @@
                 </button>
               </li>
 
-              <li class="nav-item">
+              <li class="nav-item my-md-1">
                 <!-- Boton de inicio de sesion (MODAL) -->
                 <button
                   type="button"
@@ -108,7 +108,7 @@
                 </button>
               </li>
 
-              <li class="nav-item">
+              <li class="nav-item my-md-1">
                 <!-- Boton de Registro (MODAL) -->
                 <button
                   type="button"
@@ -123,7 +123,7 @@
                 <!-- Boton de Registro (MODAL) -->
                 <button
                   type="button"
-                  class="btn btn-danger px-2 d-none d-md-block"
+                  class="btn btn-danger px-2 mt-lg-1 d-none d-md-block"
                   data-bs-toggle="modal"
                   data-bs-target="#exampleModalReg"
                 >
@@ -140,7 +140,7 @@
         <figure class="mb-0">
           <img
             src="/assets/img/El-jefe-en-Pañales.jpg"
-            alt="Poster Bebe en Pañales"
+            alt="Poster Jefe en Pañales"
             class="w-100"
           />
         </figure>
@@ -151,7 +151,7 @@
             <figure class="logo-pelicula mb-0">
               <img
                 src="/assets/img/bebeenpanaleslogo.png"
-                alt=""
+                alt="Titulo Jefe en Pañales"
                 class="w-50"
               />
             </figure>
@@ -174,14 +174,18 @@
           </article>
           <section class="padding-cont">
             <div class="botones-pelicula-contenedor d-flex gap-2">
-              <button class="btn btn-danger button-play">
-                <i class="fa-solid fa-play"></i>
-                VER AHORA
-              </button>
-              <button class="btn btn-outline-secondary button-agregar">
-                <i class="fa-solid fa-plus"></i>
-                AGREGAR A MI LISTA
-              </button>
+              <a href="#"
+                ><button class="btn btn-danger button-play">
+                  <i class="fa-solid fa-play"></i>
+                  VER AHORA
+                </button></a
+              >
+              <a href="#">
+                <button class="btn btn-outline-secondary button-agregar">
+                  <i class="fa-solid fa-plus"></i>
+                  AGREGAR A MI LISTA
+                </button>
+              </a>
             </div>
           </section>
           <section class="padding-cont-bottom">
@@ -250,14 +254,17 @@
               </div>
             </div>
           </section>
-          <section class="mt-4">
+          <section class="mt-4 carousel-contenedor">
             <h2 class="text-white fw-bolder">Películas recomendadas</h2>
             <div id="carouselExample" class="carousel slide">
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <div class="row">
-                    <div class="col-3 pelicula-zoom">
-                      <div class="card bg-transparent" style="width: 17rem">
+                    <div class="col-sm-12 col-md-4 col-lg-3 pelicula-zoom">
+                      <div
+                        class="card bg-transparent sweet-girl"
+                        style="width: 17rem"
+                      >
                         <img
                           src="/assets/img/sweet-girl.avif"
                           class="card-img-top"
@@ -270,7 +277,9 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col-3 pelicula-zoom">
+                    <div
+                      class="d-none d-md-block col-md-4 col-lg-3 pelicula-zoom"
+                    >
                       <div class="card bg-transparent" style="width: 17rem">
                         <img
                           src="/assets/img/a-descubierto.avif"
@@ -284,7 +293,9 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col-3 pelicula-zoom">
+                    <div
+                      class="d-none d-lg-block col-md-4 col-lg-3 pelicula-zoom"
+                    >
                       <div class="card bg-transparent" style="width: 17rem">
                         <img
                           src="/assets/img/the-harder-they-fall.avif"
@@ -300,7 +311,9 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col-3 pelicula-zoom">
+                    <div
+                      class="d-none d-md-block col-md-4 col-lg-3 pelicula-zoom"
+                    >
                       <div class="card bg-transparent" style="width: 17rem">
                         <img
                           src="/assets/img/centinela.avif"
@@ -318,8 +331,11 @@
                 </div>
                 <div class="carousel-item">
                   <div class="row">
-                    <div class="col-3 pelicula-zoom">
-                      <div class="card bg-transparent" style="width: 17rem">
+                    <div class="col-sm-12 col-md-4 col-lg-3 pelicula-zoom">
+                      <div
+                        class="card bg-transparent sweet-girl"
+                        style="width: 17rem"
+                      >
                         <img
                           src="/assets/img/no-mires-arriba.avif"
                           class="card-img-top"
@@ -332,7 +348,9 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col-3 pelicula-zoom">
+                    <div
+                      class="d-none d-md-block col-md-4 col-lg-3 pelicula-zoom"
+                    >
                       <div class="card bg-transparent" style="width: 17rem">
                         <img
                           src="/assets/img/tick-tick-boom.avif"
@@ -346,7 +364,9 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col-3 pelicula-zoom">
+                    <div
+                      class="d-none d-lg-block col-md-4 col-lg-3 pelicula-zoom"
+                    >
                       <div class="card bg-transparent" style="width: 17rem">
                         <img
                           src="/assets/img/beckett.avif"
@@ -360,7 +380,9 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col-3 pelicula-zoom">
+                    <div
+                      class="d-none d-md-block col-md-4 col-lg-3 pelicula-zoom"
+                    >
                       <div class="card bg-transparent" style="width: 17rem">
                         <img
                           src="/assets/img/punto-rojo.avif"
@@ -415,20 +437,18 @@
       aria-hidden="true"
     >
       <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
+        <div class="modal-content bg-secondary-subtle">
+          <div class="modal-body">
             <button
               type="button"
-              class="btn-close"
+              class="btn-close position-absolute end-0 mx-4 mb-5"
               data-bs-dismiss="modal"
               aria-label="Close"
             ></button>
-          </div>
-          <div class="modal-body">
             <!-- Aquí va el formulario -->
             <form>
               <div class="mb-3">
-                <label for="text" class="form-label"
+                <label for="text" class="form-label text-secondary"
                   >Encuentra tu próxima:</label
                 >
                 <input
@@ -451,138 +471,43 @@
       </div>
     </div>
 
-    <footer class="bg-dark pt-5 pb-4">
-      <div class="container">
-        <div class="row">
-          <div class="col-4 columnas">
-            <h4 class="text-uppercase mb-4 fw-bold text-danger">Compania</h4>
-            <ul class="px-0">
-              <li><a class="text-secondary" href="">Nosotros</a></li>
-              <li><a class="text-secondary" href="">Suscripción</a></li>
-              <li><a class="text-secondary" href="">Seguridad</a></li>
-            </ul>
-          </div>
-          <div class="col-4 columnas">
-            <h4 class="text-uppercase mb-4 fw-bold text-danger">Ayuda</h4>
-            <ul class="px-0">
-              <li><a class="text-secondary" href="">FAQ </a></li>
-              <li><a class="text-secondary" href="">Opcion de Pago</a></li>
-              <li><a class="text-secondary" href="">Perfiles</a></li>
-            </ul>
-          </div>
-          <div class="col-4 columnas">
-            <h4 class="text-uppercase mb-4 fw-bold text-danger">Seguinos</h4>
-            <div class="redes">
-              <a href="" target="_blank" class="text-secondary"
-                ><i class="fa-brands fa-square-facebook"></i
-              ></a>
-
-              <a href="" target="_blank" class="text-secondary"
-                ><i class="fa-brands fa-square-instagram"></i
-              ></a>
-
-              <a href="" target="_blank" class="text-secondary"
-                ><i class="fa-brands fa-square-twitter"></i
-              ></a>
-            </div>
-          </div>
+    <footer class="bg-dark footer">
+      <div class="grupo1">
+        <div class="box">
+          <figure>
+            <a href="">
+              <img src="/assets/img/logo-wired.png" alt="" />
+            </a>
+          </figure>
         </div>
-      </div>
-      <!-- <div class="row m-0">
-        <div
-          class="col-sm-12 col-md-4 col-lg-4 text-center contenedor-logo-footer mb-0"
-        >
-          <div class="cont-log-foot">
-            <a href="/index.html"
-              ><img
-                src="/assets/img/logo-wired.png"
-                alt="logo"
-                class="w-100 log-footer"
-            /></a>
-          </div>
-          <div class="text-center redes mt-lg-3">
+        <div class="box">
+          <h4 class="text-uppercase mb-4 fw-bold text-danger">Compania</h4>
+          <ul class="px-0">
+            <li><a class="text-secondary" href="">Nosotros</a></li>
+            <li><a class="text-secondary" href="">Suscripción</a></li>
+            <li><a class="text-secondary" href="">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="box">
+          <h4 class="text-uppercase mb-4 fw-bold text-danger">Seguinos</h4>
+          <div class="redes">
             <a href="" target="_blank" class="text-secondary"
               ><i class="fa-brands fa-square-facebook"></i
             ></a>
+
             <a href="" target="_blank" class="text-secondary"
               ><i class="fa-brands fa-square-instagram"></i
             ></a>
+
             <a href="" target="_blank" class="text-secondary"
               ><i class="fa-brands fa-square-twitter"></i
             ></a>
-            <a href="" target="_blank" class="text-secondary"
-              ><i class="fa-brands fa-twitch"></i
-            ></a>
           </div>
         </div>
-        <div
-          class="col-sm-12 col-md-4 col-lg-4 my-4 mb-0 contenedor-opciones-footer"
-        >
-          <div class="row">
-            <div class="col-6 contenedor-legales p-md-0">
-              <ul>
-                <li>
-                  <a href="/index.html" class="text-secondary">Inicio</a>
-                </li>
-                <li>
-                  <a href="#" target="_blank" class="text-secondary"
-                    >Estrenos</a
-                  >
-                </li>
-                <li>
-                  <a href="#" target="_blank" class="text-secondary"
-                    >Nosotros</a
-                  >
-                </li>
-                <li>
-                  <a href="#" target="_blank" class="text-secondary"
-                    >Contacto</a
-                  >
-                </li>
-              </ul>
-            </div>
-            <div class="col-6 contenedor-legales p-md-0">
-              <ul>
-                <li>
-                  <a href="#" target="_blank" class="text-secondary"
-                    >Políticas y Privacidad</a
-                  >
-                </li>
-                <li>
-                  <a href="#" target="_blank" class="text-secondary"
-                    >Terminos y Condiciones</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <article
-          class="col-sm-12 col-md-4 col-lg-4 text-center contenedor-app mt-md-4 p-lg-0 mb-0"
-        >
-          <div class="contenedor-ap px-5 px-md-1 mb-0">
-            <h5 class="text-secondary mb-3">Descarga la App</h5>
-            <div class="row mb-5 cont-apps mb-0">
-              <div class="col-6 col-md-12 apps">
-                <a href="#"
-                  ><img
-                    src="/assets/img/badge-apple-store.svg"
-                    alt=""
-                    class="w-100"
-                /></a>
-              </div>
-              <div class="col-6 col-md-12 apps">
-                <a href="#"
-                  ><img
-                    src="/assets/img/google-play-badge-bb.svg"
-                    alt=""
-                    class="w-100"
-                /></a>
-              </div>
-            </div>
-          </div>
-        </article>
-      </div> -->
+      </div>
+      <div class="grupo2 bg-dark text-center">
+        <small>&copy; 2024 - Todos los Derechos Reservados.</small>
+      </div>
     </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

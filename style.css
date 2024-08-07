@@ -58,11 +58,11 @@ ul {
 }
 
 header {
-  border-bottom: 2px solid rgba(204, 204, 204, 0.462);
+  border-bottom: none;
   background: linear-gradient(
     to bottom,
-    rgba(23, 23, 22, 0.675),
-    rgba(207, 5, 5, 0)
+    rgba(34, 32, 32, 0.771),
+    rgba(0, 0, 0, 0.189)
   );
   position: fixed;
   z-index: 1;
@@ -110,78 +110,83 @@ header {
   }
 }
 
-/* footer {
-  height: 250px;
-} */
+/* ? footer */
 
-/* .contenedor-logo-footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
+.footer {
+  width: 100%;
+  position: relative;
 
-  .cont-log-foot {
-    width: 50%;
-    height: 40%;
-  }
-} */
+  .grupo1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    padding: 45px 0;
 
-.contenedor {
-  width: 1170px;
-  margin: auto;
-}
-.cont-flex {
-  flex-wrap: wrap;
-}
-
-.columnas {
-  h4 {
-    text-transform: capitalize;
-    margin-bottom: 30px;
-    position: relative;
-  }
-
-  h4:before {
-    content: "";
-    position: absolute;
-    left: 50;
-    bottom: -10px;
-    height: 2px;
-    box-sizing: border-box;
-    width: 50px;
-    background-color: var(--color3);
-  }
-  ul {
-    li:not(:last-child) {
-      margin-bottom: 10px;
+    .box {
+      h4 {
+        text-transform: capitalize;
+        margin-bottom: 30px;
+        position: relative;
+      }
+      h4:before {
+        content: "";
+        position: absolute;
+        left: 50;
+        bottom: -10px;
+        height: 2px;
+        box-sizing: border-box;
+        width: 50px;
+        background-color: var(--color3);
+      }
+      ul {
+        li:not(:last-child) {
+          margin-bottom: 10px;
+        }
+        a {
+          text-transform: capitalize;
+          display: block;
+          transition: all 0.3s ease;
+        }
+        a:hover {
+          padding-left: 8px;
+        }
+      }
+      figure {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          width: 250px;
+        }
+      }
+      h4 {
+        margin-bottom: 25px;
+        font-size: 20px;
+      }
+      p {
+        margin-bottom: 10px;
+      }
     }
-    a {
-      text-transform: capitalize;
-      display: block;
-      transition: all 0.3s ease;
-    }
-    a:hover {
-      padding-left: 8px;
-    }
+  }
+  .grupo2 {
+    border-top: 2px solid #584f4f39;
+
+    padding: 15px 10px;
+    text-align: center;
+    color: gainsboro;
   }
 }
+
 /* ? media queries //////////////////////////////////// */
 
 @media only screen and (min-width: 480px) {
   .logo-wired {
     width: 20%;
-  }
-
-  .contenedor-logo-footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
-
-    .cont-log-foot {
-      width: 80%;
-      height: 40%;
-    }
   }
 
   .contenedor-opciones {
@@ -192,28 +197,46 @@ header {
       border-radius: 50%;
     }
   }
-  .contenedor-app {
-    width: 30%;
-    .contenedor-ap {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+}
 
-      .cont-apps {
-        display: flex;
-        justify-content: center;
-        .apps {
-          width: 70%;
-          margin: 5px;
+@media screen and (max-width: 480px) {
+  .boton-hamburguesa {
+    width: 50px;
+    height: 35px;
+    display: flex;
+    span {
+      height: 25px;
+      display: flex;
+
+      justify-content: center;
+    }
+  }
+  .footer {
+    .grupo1 {
+      width: 90%;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 20px;
+      font-size: 10px;
+
+      .box {
+        figure {
+          margin: 0;
+          img {
+            width: 150px;
+          }
         }
       }
     }
+    .grupo2 {
+      font-size: 10px;
+    }
   }
-  .contenedor-legales {
-    display: flex;
-    align-items: center;
-    a {
-      font-size: 90%;
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    .grupo1 {
+      padding: 25px 0;
     }
   }
 }
@@ -227,40 +250,6 @@ header {
     display: flex;
     justify-content: space-around;
   }
-  /* footer {
-    .contenedor-footer {
-      width: 100%;
-    }
-    .contenedor-app {
-      width: 30%;
-    }
-    .contenedor-logo-footer {
-      display: flex;
-      flex-direction: column;
-      justify-content: start;
-      align-items: center;
-
-      .cont-log-foot {
-        width: 80%;
-        height: 40%;
-      }
-    }
-    .contenedor-opciones-footer {
-      display: flex;
-    }
-    .contenedor-legales {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      a {
-        font-size: large;
-      }
-    }
-
-    .cont-apps {
-      display: flex;
-    }
-  } */
 
   .redes {
     font-size: x-large;

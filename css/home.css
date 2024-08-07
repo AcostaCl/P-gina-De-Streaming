@@ -24,7 +24,7 @@
 
 .contenedor-vista {
   margin: auto;
-  max-width: 1399px;
+  max-width: 1200px;
   padding: 0 16px;
 }
 
@@ -49,7 +49,7 @@
 
 .button-play:hover {
   backdrop-filter: blur(50px);
-  background: rgba(255, 41, 41, 0.341);
+  background: rgb(255, 0, 0);
 }
 
 .button-agregar:hover {
@@ -87,7 +87,7 @@
 
 .pelicula-zoom {
   img {
-    width: 100%;
+    width: 17rem;
     transition: all 30ms;
     position: relative;
     margin: 5px 0;
@@ -100,6 +100,12 @@
 .padding-cont-bottom {
   padding-bottom: 72px;
 }
+
+.carousel-contenedor {
+  margin: 120px 0;
+}
+
+/* ?/???????????? media queries */
 
 @media screen and (max-width: 480px) {
   .botones-pelicula-contenedor {
@@ -116,6 +122,18 @@
       img {
         border-radius: 50%;
       }
+    }
+  }
+  .sweet-girl {
+    margin-left: 60px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .pelicula-zoom {
+    img {
+      width: 15rem;
+      height: 11rem;
     }
   }
 }
