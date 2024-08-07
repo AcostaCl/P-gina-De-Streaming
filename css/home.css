@@ -90,6 +90,11 @@
   height: 160px;
 }
 
+.titulo-comedia {
+  display: flex;
+  justify-content: space-between;
+}
+
 @media screen and (max-width: 480px) {
   .botones-pelicula-contenedor {
     flex-direction: column;
@@ -110,6 +115,11 @@
   .cont-sweet {
     display: flex;
     justify-content: center;
+  }
+  .titulo-comedia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 

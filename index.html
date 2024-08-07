@@ -468,8 +468,15 @@
           </section>
 
           <section class="mt-4 carousel-contenedor">
-            <h2 class="text-white fw-bolder">Peliculas de Comedia</h2>
-            <div id="carouselExample" class="carousel slide">
+            <div class="d-flex titulo-comedia">
+              <h2 class="text-white fw-bolder">Peliculas de Comedia</h2>
+              <a href="#"
+                ><button type="button" class="btn btn-danger m-2 mb-3">
+                  Ver más
+                </button></a
+              >
+            </div>
+            <div id="carouselExampleCom" class="carousel slide">
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <div class="row">
@@ -619,12 +626,14 @@
                         style="width: 17rem"
                       >
                         <img
-                          src="/assets/img/beckett.avif"
+                          src="/assets/img/de-caza-con-papa.webp"
                           class="card-img-top"
                           alt="Beckett"
                         />
                         <div class="card-body position-absolute top-50">
-                          <h5 class="card-title text-white">Beckett</h5>
+                          <h5 class="card-title text-white">
+                            De Caza con Papa
+                          </h5>
 
                           <a
                             href="/pages/error-404.html"
@@ -640,12 +649,12 @@
                         style="width: 17rem"
                       >
                         <img
-                          src="/assets/img/punto-rojo.avif"
+                          src="/assets/img/yo-soy-dolemite.webp"
                           class="card-img-top"
                           alt="Punto Rojo"
                         />
                         <div class="card-body position-absolute top-50">
-                          <h5 class="card-title text-white">Punto Rojo</h5>
+                          <h5 class="card-title text-white">Yo Soy Dolemite</h5>
 
                           <a
                             href="/pages/error-404.html"
@@ -661,7 +670,7 @@
               <button
                 class="carousel-control-prev boton-carousel"
                 type="button"
-                data-bs-target="#carouselExample"
+                data-bs-target="#carouselExampleCom"
                 data-bs-slide="prev"
               >
                 <span
@@ -673,7 +682,7 @@
               <button
                 class="carousel-control-next boton-carousel"
                 type="button"
-                data-bs-target="#carouselExample"
+                data-bs-target="#carouselExampleCom"
                 data-bs-slide="next"
               >
                 <span
