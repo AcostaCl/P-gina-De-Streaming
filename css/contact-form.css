@@ -1,13 +1,51 @@
 body {
-  background: blue;
+  background: linear-gradient(-45deg, #361818, #4d2626, #5c1313, #632020);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
 }
-.formu-conte {
-  padding-top: 7%;
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
-.logotipo {
-  width: 100px;
+.form-control {
+  border: black 1px solid;
+}
+.body-contenedor {
+  padding-top: 5%;
+  margin: 10px;
 }
 
-.derecha {
-  padding: 150px 98px;
+.form-contenedor {
+  border-radius: 10px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+}
+
+.button {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 150px;
+}
+
+.redes-sociales {
+  display: flex;
+  justify-content: center;
+}
+.icon-red {
+  color: rgb(1, 0, 0);
+  font-size: 40px;
+  margin: 30px;
+}
+p {
+  font-size: 15px;
+}
+
+li {
+  margin: 10px;
 }

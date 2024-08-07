@@ -24,79 +24,87 @@
   <body>
     <header></header>
     <main>
-      <div class="formu-conte">
-        <div class="container">
-          <div class="row primer-form g-0">
+      <div class="body-contenedor">
+        <div class="container bg-white form-contenedor">
+          <div class="row">
             <div class="col-sm-12 col-lg-6">
-              <section class="izquierda bg-primary">
-                <h2>Contacta con nosotros</h2>
-                <hr />
-                <form action="">
-                  <div class="mb-3">
-                    <label for="name" class="form-label">Tu nombre</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="name"
-                      placeholder="Ingrese su nombre"
-                      required
-                    />
-                  </div>
-                  <div class="mb-3">
-                    <label for="email" class="form-label"
-                      >Correo electrónico</label
-                    >
-                    <input
-                      type="email"
-                      class="form-control"
-                      id="email"
-                      placeholder="nombre@ejemplo.com"
-                      required
-                    />
-                  </div>
-                  <div class="mb-3">
-                    <label for="textarea" class="form-label">Mensaje</label>
-                    <textarea
-                      class="form-control"
-                      id="textarea"
-                      rows="5"
-                      placeholder="Ingrese su mensaje aquí (máximo 300 carácteres)"
-                      minlength="25"
-                      maxlength="300"
-                      required
-                    ></textarea>
-                  </div>
-                  <button type="submit" class="btn btn-dark">Enviar</button>
-                </form>
-              </section>
-            </div>
-            <div class="col-sm-12 col-lg-6">
-              <section class="derecha bg-black">
-                <div class="logo d-flex justify-content-center">
-                  <img
-                    src="../assets/img/logo/22.png"
-                    alt="wired"
-                    class="logotipo"
+              <h2 class="text-center mt-3">Formulario</h2>
+              <hr />
+              <form>
+                <div class="mb-3">
+                  <label for="name" class="form-label">Tu nombre</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    placeholder="Ingrese su nombre"
+                    required
                   />
                 </div>
-                <div>
-                  <ul>
-                    <li class="text-light list-unstyled">
-                      <i class="bi bi-envelope-fill"></i>
-                      wiredcontact.us@gmail.com
-                    </li>
-                    <li class="text-light list-unstyled">
-                      <i class="bi bi-telephone-fill"></i> (000) 0000-000
-                    </li>
-                  </ul>
+                <div class="mb-3">
+                  <label for="email" class="form-label"
+                    >Correo electrónico</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="nombre@ejemplo.com"
+                    required
+                  />
                 </div>
-                <div class="redes-sociales">
-                  <p class="text-light">Nuestras redes sociales</p>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
+                <div class="mb-3">
+                  <label for="textarea" class="form-label">Mensaje</label>
+                  <textarea
+                    class="form-control"
+                    id="textarea"
+                    rows="4"
+                    placeholder="Ingrese su mensaje aquí (máximo 300 carácteres)"
+                    minlength="25"
+                    maxlength="300"
+                    required
+                  ></textarea>
                 </div>
-              </section>
+                <div class="d-flex justify-content-center align-items-center">
+                  <button type="submit" class="btn btn-dark button">
+                    Enviar
+                  </button>
+                </div>
+              </form>
+            </div>
+            <div class="col-sm-12 col-lg-6">
+              <article>
+                <h3 class="text-center mt-4 mb-3">Contacta con nosotros</h3>
+              </article>
+              <article>
+                <p class="text-center mb-5 text-muted">
+                  Si tienes alguna pregunta o comentario, no dudes en enviarnos
+                  un mensaje. Completa el formulario o utiliza los métodos de
+                  contacto proporcionados. Nos esforzamos por responder a todas
+                  las consultas lo más rápido posible.
+                </p>
+              </article>
+              <article>
+                <ul class="list-unstyled text-start mx-5">
+                  <li>
+                    <i class="bi bi-telephone-fill text-black"></i>
+                    (000) 0000-000
+                  </li>
+                  <li>
+                    <i class="bi bi-envelope-fill text-black"></i>
+                    wired.us@gmail.com
+                  </li>
+                  <li>
+                    <i class="bi bi-geo-alt-fill text-black"></i> Oficina de
+                    Wired 000, Tucumán, Argentina.
+                  </li>
+                </ul>
+              </article>
+              <article class="redes-sociales mt-5 mb-3">
+                <a href=""><i class="bi bi-instagram icon-red"></i></a>
+                <a href=""><i class="bi bi-twitter-x icon-red"></i></a>
+                <a href=""><i class="bi bi-facebook icon-red"></i></a>
+              </article>
             </div>
           </div>
         </div>
