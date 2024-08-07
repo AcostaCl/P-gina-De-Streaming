@@ -94,7 +94,11 @@
   display: flex;
   justify-content: space-between;
 }
-
+.size-card {
+  img {
+    height: 152.14px;
+  }
+}
 @media screen and (max-width: 480px) {
   .botones-pelicula-contenedor {
     flex-direction: column;
