@@ -1,0 +1,123 @@
+.poster-contenedor {
+  width: 100%;
+  border: 2px solid black;
+  position: fixed;
+}
+.poster-contenedor:before {
+  content: "";
+  background: linear-gradient(
+    to top,
+    rgba(23, 23, 22),
+    rgba(23, 23, 22, 0.71),
+    rgba(23, 23, 22, 0.434),
+    rgba(23, 23, 22, 0.822),
+    rgb(0, 0, 0)
+  );
+  inset: 0;
+  position: absolute;
+}
+
+.detalles-contenedor {
+  top: 72px;
+}
+
+.contenedor-vista {
+  margin: auto;
+  max-width: 1200px;
+  padding: 0 16px;
+}
+
+.padding-cont {
+  padding: 72px 0;
+}
+
+.resumen-pelicula {
+  max-width: 767px;
+
+  p {
+    color: white;
+    font: 1.25rem;
+  }
+}
+
+.datos-pelicula {
+  background: rgba(23, 23, 22, 0.861);
+  color: rgb(177, 176, 176);
+  padding: 2px 8px;
+}
+
+.button-play:hover {
+  background: rgb(255, 57, 57);
+}
+
+.button-agregar:hover {
+  color: white;
+}
+
+.elenco-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  .cards-elenco {
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    backdrop-filter: blur(20px);
+    border-radius: 13px;
+    gap: 10px;
+  }
+  .card-img {
+    height: 200px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 13px;
+      object-fit: cover;
+    }
+  }
+}
+
+.padding-cont-bottom {
+  padding-bottom: 72px;
+}
+
+.carousel-contenedor {
+  margin: 120px 0;
+}
+
+.boton-carousel {
+  height: 160px;
+}
+
+@media screen and (max-width: 480px) {
+  .botones-pelicula-contenedor {
+    flex-direction: column;
+  }
+
+  .cards-elenco {
+    align-items: center;
+    border: 2px solid rgba(255, 255, 255, 0.116);
+    flex-direction: row;
+    .card-img {
+      height: 32px;
+      width: 32px;
+      img {
+        border-radius: 50%;
+      }
+    }
+  }
+  .cont-sweet {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card-pelicula {
+    img {
+      width: 15.5rem;
+      height: 11rem;
+    }
+  }
+}

@@ -14,11 +14,558 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="./style.css" />
-    <title>Página de Streaming</title>
+    <link rel="stylesheet" href="/css/home.css" />
+    <title>Wired</title>
   </head>
   <body>
-    <header></header>
-    <main></main>
+    <header>
+      <nav class="navbar navbar-expand-lg px-5">
+        <div class="container-fluid">
+          <a class="navbar-brand logo-wired" href="/index.html"
+            ><img src="/assets/img/logo-wired.png" alt="logo" class="w-100"
+          /></a>
+
+          <button
+            class="navbar-toggler bg-secondary-subtle boton-hamburguesa"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div
+            class="collapse navbar-collapse contenedor-opciones"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4 ul-contenido">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/index.html"
+                  >INICIO</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#" target="_blank">SERIES</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#" target="_blank"> PELICULAS </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#" target="_blank"
+                  ><i class="fa-solid fa-plus"></i> MI LISTA</a
+                >
+              </li>
+            </ul>
+
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 mx-lg-3">
+              <li class="nav-item my-md-1">
+                <button
+                  type="button"
+                  class="btn btn-transparent mx-1 mx-lg-2 boton-search"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModalBus"
+                >
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+              </li>
+              <li class="nav-item">
+                <button
+                  type="button"
+                  class="btn text-danger px-0 p-lg-2 d-none"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModalBus"
+                >
+                  Buscar
+                </button>
+              </li>
+
+              <li class="nav-item my-md-1">
+                <button
+                  type="button"
+                  class="btn btn-danger mx-1 my-3 my-md-1 mx-lg-2 boton-user"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModalLog"
+                >
+                  <i class="fa-solid fa-user"></i>
+                </button>
+              </li>
+              <li class="nav-item">
+                <button
+                  type="button"
+                  class="btn text-danger d-none px-0 p-lg-2"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModalLog"
+                >
+                  Iniciar sesion
+                </button>
+              </li>
+
+              <li class="nav-item my-md-1">
+                <button
+                  type="button"
+                  class="btn text-danger px-0 p-lg-2 d-none boton-suscribirse"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModalReg"
+                >
+                  Suscribirse
+                </button>
+              </li>
+              <li class="nav-item">
+                <button
+                  type="button"
+                  class="btn btn-danger px-2 mt-lg-1"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModalReg"
+                >
+                  Suscribirse
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="poster-contenedor">
+        <figure class="mb-0">
+          <img
+            src="/assets/img/El-jefe-en-Pañales.jpg"
+            alt="Poster Jefe en Pañales"
+            class="w-100"
+          />
+        </figure>
+      </div>
+
+      <section class="detalles-contenedor position-relative">
+        <div class="contenedor-vista">
+          <article class="padding-cont">
+            <figure class="logo-pelicula mb-0">
+              <img
+                src="/assets/img/bebeenpanaleslogo.png"
+                alt="Titulo Jefe en Pañales"
+                class="w-50"
+              />
+            </figure>
+          </article>
+
+          <article class="resumen-pelicula">
+            <p class="mb-0">
+              Un chico termina involucrado en un siniestro plan corporativo
+              cuando sus padres llevan a casa a un bebé que solo habla de
+              negocios cuando ellos no están.
+            </p>
+          </article>
+
+          <article class="mt-3">
+            <div class="d-flex gap-2 flex-wrap">
+              <span class="datos-pelicula rounded-1">2017</span>
+              <span class="text-white">•</span>
+              <span class="datos-pelicula rounded-1">7+</span>
+              <span class="text-white">•</span>
+              <span class="datos-pelicula rounded-1">1 h 37 min</span>
+            </div>
+          </article>
+
+          <section class="padding-cont">
+            <div class="botones-pelicula-contenedor d-flex gap-2">
+              <a href="#"
+                ><button class="btn btn-danger button-play">
+                  <i class="fa-solid fa-play"></i>
+                  VER AHORA
+                </button></a
+              >
+              <a href="#">
+                <button class="btn btn-outline-secondary button-agregar">
+                  <i class="fa-solid fa-plus"></i>
+                  AGREGAR A MI LISTA
+                </button>
+              </a>
+            </div>
+          </section>
+
+          <section class="padding-cont-bottom">
+            <h2 class="text-white fw-bolder">Elenco</h2>
+            <div class="elenco-grid">
+              <div class="cards-elenco">
+                <figure class="card-img mb-0">
+                  <img
+                    src="/assets/img/alec_baldwin.jpeg"
+                    alt=""
+                    class="w-100"
+                  />
+                </figure>
+                <p class="text-white mb-0">Alec Baldwin</p>
+              </div>
+              <div class="cards-elenco">
+                <figure class="card-img mb-0">
+                  <img
+                    src="/assets/img/james_marsden.jpeg"
+                    alt=""
+                    class="w-100"
+                  />
+                </figure>
+                <p class="text-white mb-0">James Marsden</p>
+              </div>
+              <div class="cards-elenco">
+                <figure class="card-img mb-0">
+                  <img
+                    src="/assets/img/amy_sedaris.jpeg"
+                    alt=""
+                    class="w-100"
+                  />
+                </figure>
+                <p class="text-white mb-0">Amy Sedaris</p>
+              </div>
+              <div class="cards-elenco">
+                <figure class="card-img mb-0">
+                  <img
+                    src="/assets/img/ariana_greenblatt-207411856304845-nm_large.jpg"
+                    alt=""
+                    class="w-100"
+                  />
+                </figure>
+
+                <p class="text-white mb-0">Ariana Greenblatt</p>
+              </div>
+              <div class="cards-elenco">
+                <figure class="card-img mb-0">
+                  <img
+                    src="/assets/img/jeff_goldblum-100365857941398-nm_large.jpg"
+                    alt=""
+                    class="w-100"
+                  />
+                </figure>
+                <p class="text-white mb-0">Jeff Goldblum</p>
+              </div>
+              <div class="cards-elenco">
+                <figure class="card-img mb-0">
+                  <img
+                    src="/assets/img/eva_longoria-096864800119208-nm_large.jpg"
+                    alt=""
+                    class="w-100"
+                  />
+                </figure>
+                <p class="text-white mb-0">Eva Longoria</p>
+              </div>
+            </div>
+          </section>
+
+          <section class="mt-4 carousel-contenedor">
+            <h2 class="text-white fw-bolder">Películas recomendadas</h2>
+            <div id="carouselExample" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row">
+                    <div class="col-sm-12 col-md-4 col-lg-3 cont-sweet">
+                      <div
+                        class="card bg-transparent card-pelicula"
+                        style="width: 17rem"
+                      >
+                        <img
+                          src="/assets/img/sweet-girl.avif"
+                          class="card-img-top"
+                          alt="Sweet Girl"
+                        />
+                        <div class="card-body position-absolute top-50">
+                          <h5 class="card-title text-white">Sweet Girl</h5>
+
+                          <a
+                            href="/pages/error-404.html"
+                            class="btn btn-outline-danger"
+                            >Ver más</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-none d-md-block col-md-4 col-lg-3">
+                      <div
+                        class="card bg-transparent card-pelicula"
+                        style="width: 17rem"
+                      >
+                        <img
+                          src="/assets/img/a-descubierto.avif"
+                          class="card-img-top"
+                          alt="A Descubierto"
+                        />
+                        <div class="card-body position-absolute top-50">
+                          <h5 class="card-title text-white">A Descubierto</h5>
+
+                          <a
+                            href="/pages/error-404.html"
+                            class="btn btn-outline-danger"
+                            >Ver más</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-none d-lg-block col-md-4 col-lg-3">
+                      <div
+                        class="card bg-transparent card-pelicula"
+                        style="width: 17rem"
+                      >
+                        <img
+                          src="/assets/img/the-harder-they-fall.avif"
+                          class="card-img-top"
+                          alt="The Harder They Fall"
+                        />
+                        <div class="card-body position-absolute top-50">
+                          <h5 class="card-title text-white">
+                            The Harder They Fall
+                          </h5>
+
+                          <a
+                            href="/pages/error-404.html"
+                            class="btn btn-outline-danger"
+                            >Ver más</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-none d-md-block col-md-4 col-lg-3">
+                      <div
+                        class="card bg-transparent card-pelicula"
+                        style="width: 17rem"
+                      >
+                        <img
+                          src="/assets/img/centinela.avif"
+                          class="card-img-top"
+                          alt="Centinela"
+                        />
+                        <div class="card-body position-absolute top-50">
+                          <h5 class="card-title text-white">Centinela</h5>
+
+                          <a
+                            href="/pages/error-404.html"
+                            class="btn btn-outline-danger"
+                            >Ver más</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-sm-12 col-md-4 col-lg-3 cont-sweet">
+                      <div
+                        class="card bg-transparent card-pelicula"
+                        style="width: 17rem"
+                      >
+                        <img
+                          src="/assets/img/no-mires-arriba.avif"
+                          class="card-img-top"
+                          alt="No Mires Arriba"
+                        />
+                        <div class="card-body position-absolute top-50">
+                          <h5 class="card-title text-white">No Mires Arriba</h5>
+
+                          <a
+                            href="/pages/error-404.html"
+                            class="btn btn-outline-danger"
+                            >Ver más</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-none d-md-block col-md-4 col-lg-3">
+                      <div
+                        class="card bg-transparent card-pelicula"
+                        style="width: 17rem"
+                      >
+                        <img
+                          src="/assets/img/tick-tick-boom.avif"
+                          class="card-img-top"
+                          alt="Tick Tick Boom"
+                        />
+                        <div class="card-body position-absolute top-50">
+                          <h5 class="card-title text-white">Tick Tick Boom</h5>
+
+                          <a
+                            href="/pages/error-404.html"
+                            class="btn btn-outline-danger"
+                            >Ver más</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-none d-lg-block col-md-4 col-lg-3">
+                      <div
+                        class="card bg-transparent card-pelicula"
+                        style="width: 17rem"
+                      >
+                        <img
+                          src="/assets/img/beckett.avif"
+                          class="card-img-top"
+                          alt="Beckett"
+                        />
+                        <div class="card-body position-absolute top-50">
+                          <h5 class="card-title text-white">Beckett</h5>
+
+                          <a
+                            href="/pages/error-404.html"
+                            class="btn btn-outline-danger"
+                            >Ver más</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-none d-md-block col-md-4 col-lg-3">
+                      <div
+                        class="card bg-transparent card-pelicula"
+                        style="width: 17rem"
+                      >
+                        <img
+                          src="/assets/img/punto-rojo.avif"
+                          class="card-img-top"
+                          alt="Punto Rojo"
+                        />
+                        <div class="card-body position-absolute top-50">
+                          <h5 class="card-title text-white">Punto Rojo</h5>
+
+                          <a
+                            href="/pages/error-404.html"
+                            class="btn btn-outline-danger"
+                            >Ver más</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev boton-carousel"
+                type="button"
+                data-bs-target="#carouselExample"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next boton-carousel"
+                type="button"
+                data-bs-target="#carouselExample"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <div
+      class="modal fade"
+      id="exampleModalBus"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content bg-secondary-subtle">
+          <div class="modal-body">
+            <button
+              type="button"
+              class="btn-close position-absolute end-0 mx-4 mb-5"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+
+            <form>
+              <div class="mb-3">
+                <label for="text" class="form-label text-secondary"
+                  >Encuentra tu próxima:</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="text"
+                  placeholder="Película, Serie..."
+                  aria-describedby="buscsdorText"
+                  required
+                  maxlength="15"
+                />
+              </div>
+
+              <div class="d-flex justify-content-end">
+                <button type="submit" class="m-1 btn btn-danger">Buscar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-dark footer">
+      <div class="grupo1">
+        <div class="box">
+          <figure>
+            <a href="">
+              <img src="/assets/img/logo-wired.png" alt="Logo Wired" />
+            </a>
+          </figure>
+        </div>
+
+        <div class="box">
+          <h4 class="text-uppercase mb-4 fw-bold text-danger">Compania</h4>
+          <ul class="px-0">
+            <li>
+              <a class="text-secondary" href="/pages/about-us.html">Nosotros</a>
+            </li>
+            <li><a class="text-secondary" href="#">Suscripción</a></li>
+            <li>
+              <a class="text-secondary" href="/pages/contact.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="box">
+          <h4 class="text-uppercase mb-4 fw-bold text-danger">Siguenos</h4>
+          <div class="redes">
+            <a
+              href="https://es-la.facebook.com/login/device-based/regular/login/"
+              target="_blank"
+              class="text-secondary"
+              ><i class="fa-brands fa-square-facebook"></i
+            ></a>
+
+            <a
+              href="https://www.instagram.com/accounts/emailsignup/"
+              target="_blank"
+              class="text-secondary"
+              ><i class="fa-brands fa-square-instagram"></i
+            ></a>
+
+            <a
+              href="https://x.com/i/flow/login"
+              target="_blank"
+              class="text-secondary"
+              ><i class="fa-brands fa-square-twitter"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="grupo2 bg-dark text-secondary text-center">
+        <small>&copy; 2024 - Todos los Derechos Reservados.</small>
+      </div>
+    </footer>
 
     <footer></footer>
     <script
