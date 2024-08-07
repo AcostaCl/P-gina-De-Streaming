@@ -1,21 +1,28 @@
-.poster-contenedor {
-  width: 100%;
-  border: 2px solid black;
-  position: fixed;
+
+
+body {
+  background-image: url(/assets/img/El-jefe-en-Pañales.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
 }
-.poster-contenedor:before {
-  content: "";
+
+main {
   background: linear-gradient(
     to top,
-    rgba(23, 23, 22),
+    rgba(23, 23, 22, 0.219),
     rgba(23, 23, 22, 0.71),
     rgba(23, 23, 22, 0.434),
     rgba(23, 23, 22, 0.822),
-    rgb(0, 0, 0)
+    rgba(0, 0, 0, 0.703)
   );
-  inset: 0;
-  position: absolute;
+  color: white;
+  width: 100%;
+  min-height: auto;
 }
+
 
 .detalles-contenedor {
   top: 72px;
