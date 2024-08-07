@@ -85,24 +85,16 @@
 
 /* ?carrusel peliculas recomendadas */
 
-.pelicula-zoom {
-  img {
-    width: 17rem;
-    transition: all 30ms;
-    position: relative;
-    margin: 5px 0;
-  }
-  img:hover {
-    transform: scale(1.15s);
-  }
-}
-
 .padding-cont-bottom {
   padding-bottom: 72px;
 }
 
 .carousel-contenedor {
   margin: 120px 0;
+}
+
+.boton-carousel {
+  height: 160px;
 }
 
 /* ?/???????????? media queries */

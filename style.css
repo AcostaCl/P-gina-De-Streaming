@@ -41,9 +41,6 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
-/* main {
-  min-height: 80vh;
-} */
 
 .logo-wired {
   width: 30%;
