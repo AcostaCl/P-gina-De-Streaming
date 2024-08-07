@@ -1,29 +1,110 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://kit.fontawesome.com/cda34ee0ad.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="./style.css" />
-    <title>Acerca de nosotros</title>
-  </head>
-  <body>
-    <header></header>
-    <main></main>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-    <footer></footer>
-  </body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acerca de Nosotros</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            width: 100%;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #fff;
+        }
+
+        .team {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .card {
+            background-color: #333;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 450px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .card img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        .card h2 {
+            color: #fff;
+            margin: 10px 0;
+        }
+
+        .card p {
+            color: #ccc;
+        }
+
+        @media (max-width: 768px) {
+            .card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Acerca de Nosotros</h1>
+        <div class="team">
+            <div class="card">
+                <img src="https://comporganizer.com/images/people/none.jpg" alt="Avatar de Mauricio">
+                <h2>Mauricio</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vehicula, risus sit amet
+                    fermentum interdum.</p>
+            </div>
+            <div class="card">
+                <img src="https://as1.ftcdn.net/v2/jpg/00/68/89/18/1000_F_68891875_Xws9CSpGl3R3D8XpruwW6x8TUwsLnBgA.jpg"
+                    alt="Avatar de Lucía">
+                <h2>Lucía</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vehicula, risus sit amet
+                    fermentum interdum.</p>
+            </div>
+            <div class="card">
+                <img src="https://comporganizer.com/images/people/none.jpg" alt="Avatar de Mariano">
+                <h2>Mariano</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vehicula, risus sit amet
+                    fermentum interdum.</p>
+            </div>
+            <div class="card">
+                <img src="https://as1.ftcdn.net/v2/jpg/00/68/89/18/1000_F_68891875_Xws9CSpGl3R3D8XpruwW6x8TUwsLnBgA.jpg"
+                    alt="Avatar de Celina">
+                <h2>Celina</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vehicula, risus sit amet
+                    fermentum interdum.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
 </html>
