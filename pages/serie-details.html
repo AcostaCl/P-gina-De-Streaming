@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/cda34ee0ad.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/css/serie.css" />
+    
+
+    <title>House of the Dragon</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg px-5">
+        <div class="container-fluid">
+          <a class="navbar-brand logo-wired" href="/index.html"
+            ><img src="/assets/img/logo-wired.png" alt="logo" class="w-100"
+          /></a>
+
+          <button
+            class="navbar-toggler bg-secondary-subtle boton-hamburguesa"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div
+            class="collapse navbar-collapse contenedor-opciones"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4 ul-contenido">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/index.html"
+                  >INICIO</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/error-404.html" target="_blank">SERIES</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/error-404.html" target="_blank"> PELICULAS </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/error-404.html" target="_blank"
+                  ><i class="fa-solid fa-plus"></i> MI LISTA</a
+                >
+              </li>
+            </ul>
+
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 mx-lg-3">
+              <li class="nav-item my-md-1">
+                <button
+                  type="button"
+                  class="btn btn-transparent mx-1 mx-lg-2 boton-search"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModalBus"
+                >
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+              </li>
+              <li class="nav-item">
+                <button
+                  type="button"
+                  class="btn text-danger px-0 p-lg-2 d-none"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModalBus"
+                >
+                  Buscar
+                </button>
+              </li>
+
+              <li class="nav-item my-md-1">
+                <button
+                  type="button"
+                  class="btn btn-danger mx-1 my-3 my-md-1 mx-lg-2 boton-user"
+                  data-bs-toggle="modal"
+                  data-bs-target="#loginModal"
+                >
+                  <i class="fa-solid fa-user"></i>
+                </button>
+              </li>
+              <li class="nav-item">
+                <button
+                  type="button"
+                  class="btn text-danger d-none px-0 p-lg-2"
+                  data-bs-toggle="modal"
+                  data-bs-target="#loginModal"
+                >
+                  Iniciar sesion
+                </button>
+              </li>
+
+              <li class="nav-item my-md-1">
+                <button
+                  type="button"
+                  class="btn text-danger px-0 p-lg-2 d-none boton-suscribirse"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModalReg"
+                >
+                  Suscribirse
+                </button>
+              </li>
+              <li class="nav-item">
+                <a href="/pages/plans.html"><button
+                  type="button"
+                  class="btn btn-danger px-2 mt-lg-1"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModalReg"
+                >
+                  Suscribirse
+                </button></a>
+                
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="container-fluid info text-light p-4 anton-regular">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="movie-title mb-5 mt-5 pt-5 luckiest-guy-regular display-2">
+              House of the Dragon
+            </h2>
+          </div>
+          <div class="col-sm-12 movie-details mb-5">
+            <div class="row">
+              <div class="col-5 col-md-3 d-flex flex-column m-2">
+                <label class="little-tittle">Lanzamiento</label>
+                <span>Agosto 21, 2022</span>
+              </div>
+              <div class="col-5 col-md-3 d-flex flex-column m-2">
+                <label class="little-tittle">Temporadas</label>
+                <span>2 - En emisión</span>
+              </div>
+              <div class="col-5 col-md-3 d-flex flex-column m-2">
+                <label class="little-tittle">Género</label>
+                <span>Drama / Fantasía </span>
+              </div>
+              <div class="col-5 col-md-3 d-flex flex-column m-2">
+                <label class="little-tittle">Calidad</label>
+                <span>Full HD 4K </span>
+              </div>
+              <div class="col-5 col-md-3 d-flex flex-column m-2">
+                <label class="little-tittle">Edad Recomendada</label>
+                <span>+18</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-10 movie-description">
+            Basada en el primer volumen de Fuego y Sangre de George R. R.
+            Martin, esta historia tiene lugar 172 años antes del nacimiento de
+            Daenerys Targaryen. Explora el principio del fin de la Casa
+            Targaryen, con disputas intrafamiliares y el desarrollo de una
+            guerra civil conocida como la Danza de Dragones.
+          </div>
+          <div class="col-6 d-flex my-4 justify-content-around">
+            <div class="d-flex align-items-center play-trailer flex-column m-2">
+              <a href="/pages/error-404.html">
+                <i class="fa-solid fa-play fa-2x" style="color: #d95043"></i>
+              </a>
+              <p>Reproducir</p>
+            </div>
+            <div class="d-flex align-items-center play-trailer flex-column m-2">
+              <button
+                class="trailermodal"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                <i
+                  class="fa-brands fa-youtube fa-2x"
+                  style="color: #d95043"
+                ></i>
+              </button>
+              <p>Trailer</p>
+            </div>
+            <div class="d-flex align-items-center flex-column m-2">
+              <button class="favourite">
+                <i class="fa-solid fa-heart fa-2x"></i>
+              </button>
+              <p>Favorito</p>
+            </div>
+          </div>
+          <div class="col-12 my-3">
+            <details>
+              <summary
+                class="title-season d-flex justify-content-center rounded"
+              >
+                Temporada 1
+              </summary>
+              <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-3 my-3 details-info">
+                  <div class="m-2 chapter border rounded">
+                    <a href="/pages/error-404.html"
+                      ><img
+                        src="https://m.media-amazon.com/images/M/MV5BNjY0MWFlMjgtNGNiNC00YjcyLWJlNWUtMGY0NTg2MzZlNzQ2XkEyXkFqcGc@._V1_QL75_UX1230_.jpg"
+                        alt="..."
+                        class="img-fluid rounded-top"
+                      />
+                      <div class="p-2">
+                        <h5 class="luckiest-guy-regular" style="color: #d95043">
+                          E1: Los Herederos del dragón
+                        </h5>
+                        <span style="color: grey"
+                          >+18 <i class="fa-solid fa-clock"></i> 1h 6min
+                          2022</span
+                        >
+                        <p>
+                          Viserys organiza un torneo para celebrar el nacimiento
+                          de su segundo hijo. Raenhyra recibe a su tío Daemon
+                          cuando regresa de la Fortaleza Roja.
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 my-3 details-info">
+                    <div class="m-2 chapter border rounded">
+                        <a href="/pages/error-404.html"
+                          ><img
+                            src="https://m.media-amazon.com/images/M/MV5BM2Y5YjVkNzktZWI2OS00MTA3LTg2NjYtMDg3NWQzMWZkOWZhXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_QL75_UX547.5_.jpg"
+                            alt="..."
+                            class="img-fluid rounded-top"
+                          />
+                          <div class="p-2">
+                            <h5 class="luckiest-guy-regular" style="color: #d95043">
+                                E2: El Príncipe Canalla
+                            </h5>
+                            <span style="color: grey"
+                              >+18 <i class="fa-solid fa-clock"></i> 54min
+                              2022</span
+                            >
+                            <p>
+                                Rhaenyra se sobrepasa en el Consejo Privado. A Viserys le es aconsejado garantizar la sucesión a través del matrimonio. Daemon anuncia su intención.
+                            </p>
+                          </div>
+                        </a>
+                      </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 my-3 details-info">
+                    <div class="m-2 chapter border rounded">
+                        <a href="/pages/error-404.html"
+                          ><img
+                            src="https://m.media-amazon.com/images/M/MV5BNjY0MWFlMjgtNGNiNC00YjcyLWJlNWUtMGY0NTg2MzZlNzQ2XkEyXkFqcGc@._V1_QL75_UX1230_.jpg"
+                            alt="..."
+                            class="img-fluid rounded-top"
+                          />
+                          <div class="p-2">
+                            <h5 class="luckiest-guy-regular" style="color: #d95043">
+                                E3: El Segundo de su Nombre
+                            </h5>
+                            <span style="color: grey"
+                              >+18 <i class="fa-solid fa-clock"></i> 1h 4min
+                              2022</span
+                            >
+                            <p>
+                                Daemon y la Serpiente Marina luchan contra el Alimenta Cangrejos. El reino celebra el segundo día del nombre de Aegon. Rhaenyra enfrenta posible boda.
+                            </p>
+                          </div>
+                        </a>
+                      </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 my-3 details-info">
+                    <div class="m-2 chapter border rounded">
+                        <a href="/pages/error-404.html"
+                          ><img
+                            src="https://m.media-amazon.com/images/M/MV5BN2RiNWU4MGUtNDA1Ny00MDgzLTg5ODktMzllMTVkNmEwNGI2XkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_QL75_UX607.5_.jpg"
+                            alt="..."
+                            class="img-fluid rounded-top"
+                          />
+                          <div class="p-2">
+                            <h5 class="luckiest-guy-regular" style="color: #d95043">
+                                E4: El Rey del Mar Estrecho
+                            </h5>
+                            <span style="color: grey"
+                              >+18 <i class="fa-solid fa-clock"></i> 1h 3min
+                              2022</span
+                            >
+                            <p>
+                                Luego de que Rhaenyra interrumpe su recorrido por Westeros, Daemon le presenta a la princesa la calle de la Seda después del anochecer.
+                            </p>
+                          </div>
+                        </a>
+                      </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 my-3 details-info">
+                    <div class="m-2 chapter border rounded">
+                        <a href="/pages/error-404.html"
+                          ><img
+                            src="https://m.media-amazon.com/images/M/MV5BNjY0MWFlMjgtNGNiNC00YjcyLWJlNWUtMGY0NTg2MzZlNzQ2XkEyXkFqcGc@._V1_QL75_UX1230_.jpg"
+                            alt="..."
+                            class="img-fluid rounded-top"
+                          />
+                          <div class="p-2">
+                            <h5 class="luckiest-guy-regular" style="color: #d95043">
+                                E5: Iluminamos el Camino
+                            </h5>
+                            <span style="color: grey"
+                              >+18 <i class="fa-solid fa-clock"></i> 1h
+                              2022</span
+                            >
+                            <p>
+                                Daemon visita a su esposa en Vale. Viserys y Rhaenyra negocian acuerdos con los Velaryon. Alicent busca la verdad sobre la princesa.
+                            </p>
+                          </div>
+                        </a>
+                      </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 my-3 details-info">
+                    <div class="m-2 chapter border rounded">
+                        <a href="/pages/error-404.html"
+                          ><img
+                            src="https://m.media-amazon.com/images/M/MV5BM2Y5YjVkNzktZWI2OS00MTA3LTg2NjYtMDg3NWQzMWZkOWZhXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_QL75_UX547.5_.jpg"
+                            alt="..."
+                            class="img-fluid rounded-top"
+                          />
+                          <div class="p-2">
+                            <h5 class="luckiest-guy-regular" style="color: #d95043">
+                                E6: La Princesa y la Reina
+                            </h5>
+                            <span style="color: grey"
+                              >+18 <i class="fa-solid fa-clock"></i> 1h 8min
+                              2022</span
+                            >
+                            <p>
+                                Diez años después. Rhaenyra lidia con las constantes especulaciones de Alicent sobre sus hijos. Daemon y Laena evalúan una oferta en Pentos.
+                            </p>
+                          </div>
+                        </a>
+                      </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 my-3 details-info">
+                    <div class="m-2 chapter border rounded">
+                        <a href="/pages/error-404.html"
+                          ><img
+                            src="https://m.media-amazon.com/images/M/MV5BNjY0MWFlMjgtNGNiNC00YjcyLWJlNWUtMGY0NTg2MzZlNzQ2XkEyXkFqcGc@._V1_QL75_UX1230_.jpg"
+                            alt="..."
+                            class="img-fluid rounded-top"
+                          />
+                          <div class="p-2">
+                            <h5 class="luckiest-guy-regular" style="color: #d95043">
+                                E7: Driftmark
+                            </h5>
+                            <span style="color: grey"
+                              >+18 <i class="fa-solid fa-clock"></i> 59min
+                              2022</span
+                            >
+                            <p>
+                                Mientras las familias se reúnen en Driftmark para un funeral, Viserys pide que las luchas internas cesen y Alicent exige justicia.
+                            </p>
+                          </div>
+                        </a>
+                      </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 my-3 details-info">
+                    <div class="m-2 chapter border rounded">
+                        <a href="/pages/error-404.html"
+                          ><img
+                            src="https://m.media-amazon.com/images/M/MV5BM2Y5YjVkNzktZWI2OS00MTA3LTg2NjYtMDg3NWQzMWZkOWZhXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_QL75_UX547.5_.jpg"
+                            alt="..."
+                            class="img-fluid rounded-top"
+                          />
+                          <div class="p-2">
+                            <h5 class="luckiest-guy-regular" style="color: #d95043">
+                                E8: El Señor de las Mareas
+                            </h5>
+                            <span style="color: grey"
+                              >+18 <i class="fa-solid fa-clock"></i> 1h 8min
+                              2022</span
+                            >
+                            <p>
+                                Seis años después. Con una repentina crisis de sucesión en Driftmark, Rhaenyra intenta llegar a un acuerdo con Rhaenys.
+                            </p>
+                          </div>
+                        </a>
+                      </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 my-3 details-info">
+                    <div class="m-2 chapter border rounded">
+                        <a href="/pages/error-404.html"
+                          ><img
+                            src="https://m.media-amazon.com/images/M/MV5BN2RiNWU4MGUtNDA1Ny00MDgzLTg5ODktMzllMTVkNmEwNGI2XkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_QL75_UX607.5_.jpg"
+                            alt="..."
+                            class="img-fluid rounded-top"
+                          />
+                          <div class="p-2">
+                            <h5 class="luckiest-guy-regular" style="color: #d95043">
+                                E9: El Consejo Verde
+                            </h5>
+                            <span style="color: grey"
+                              >+18 <i class="fa-solid fa-clock"></i> 58min
+                              2022</span
+                            >
+                            <p>
+                                Mientras Alicent pide ayuda a Cole y Aemond para localizar a Aegon, Otto reúne a las grandes casas de Westeros para que afirmen su lealtad.
+                            </p>
+                          </div>
+                        </a>
+                      </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 my-3 details-info">
+                    <div class="m-2 chapter border rounded">
+                        <a href="/pages/error-404.html"
+                          ><img
+                            src="https://m.media-amazon.com/images/M/MV5BNjY0MWFlMjgtNGNiNC00YjcyLWJlNWUtMGY0NTg2MzZlNzQ2XkEyXkFqcGc@._V1_QL75_UX1230_.jpg"
+                            alt="..."
+                            class="img-fluid rounded-top"
+                          />
+                          <div class="p-2">
+                            <h5 class="luckiest-guy-regular" style="color: #d95043">
+                                E10: La Reina Negra
+                            </h5>
+                            <span style="color: grey"
+                              >+18 <i class="fa-solid fa-clock"></i> 1h
+                              2022</span
+                            >
+                            <p>
+                                Mientras lamenta una pérdida trágica, Rhaenyra intenta mantener el reino unido y Daemon se prepara para la guerra.
+                            </p>
+                          </div>
+                        </a>
+                      </div>
+                </div>
+              </div>
+            </details>
+          </div>
+          <div class="col-12 my-3">
+            <details>
+              <summary
+                class="title-season d-flex justify-content-center rounded"
+              >
+                Temporada 2
+              </summary>
+              <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-3 my-3 details-info">
+                    <div class="m-2 chapter border rounded">
+                        <a href="/pages/error-404.html"
+                          ><img
+                            src="https://m.media-amazon.com/images/M/MV5BNjY0MWFlMjgtNGNiNC00YjcyLWJlNWUtMGY0NTg2MzZlNzQ2XkEyXkFqcGc@._V1_QL75_UX1230_.jpg"
+                            alt="..."
+                            class="img-fluid rounded-top"
+                          />
+                          <div class="p-2">
+                            <h5 class="luckiest-guy-regular" style="color: #d95043">
+                                E1: Hijo por Hijo
+                            </h5>
+                            <span style="color: grey"
+                              >+18 <i class="fa-solid fa-clock"></i> 59min
+                              2024</span
+                            >
+                            <p>
+                                Mientras Alicent se preocupa cada vez más por el Consejo de Aegon, Rhaenyra toma una decisión fatídica.
+                            </p>
+                          </div>
+                        </a>
+                      </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 my-3 details-info">
+                    <div class="m-2 chapter border rounded">
+                        <a href="/pages/error-404.html"
+                          ><img
+                            src="https://m.media-amazon.com/images/M/MV5BM2Y5YjVkNzktZWI2OS00MTA3LTg2NjYtMDg3NWQzMWZkOWZhXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_QL75_UX547.5_.jpg"
+                            alt="..."
+                            class="img-fluid rounded-top"
+                          />
+                          <div class="p-2">
+                            <h5 class="luckiest-guy-regular" style="color: #d95043">
+                                E2: Rhaenyra La Cruel
+                            </h5>
+                            <span style="color: grey"
+                              >+18 <i class="fa-solid fa-clock"></i> 1h 9min
+                              2024</span
+                            >
+                            <p>
+                                Rhaenyra cuestiona la lealtad de Daemon al tiempo que Otto planea poner al público en contra de ella.
+                            </p>
+                          </div>
+                        </a>
+                      </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 my-3 details-info">
+                    <div class="m-2 chapter border rounded">
+                        <a href="/pages/error-404.html"
+                          ><img
+                            src="https://m.media-amazon.com/images/M/MV5BNjY0MWFlMjgtNGNiNC00YjcyLWJlNWUtMGY0NTg2MzZlNzQ2XkEyXkFqcGc@._V1_QL75_UX1230_.jpg"
+                            alt="..."
+                            class="img-fluid rounded-top"
+                          />
+                          <div class="p-2">
+                            <h5 class="luckiest-guy-regular" style="color: #d95043">
+                                E3: El Molino Ardiente
+                            </h5>
+                            <span style="color: grey"
+                              >+18 <i class="fa-solid fa-clock"></i> 1h 7min
+                              2024</span
+                            >
+                            <p>
+                                Mientras resurgen antiguos rencores, Rhaenys sugiere moderación. Daemon llega a Harrenhal para armar un ejército para los Negros.
+                            </p>
+                          </div>
+                        </a>
+                      </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 my-3 details-info">
+                    <div class="m-2 chapter border rounded">
+                        <a href="/pages/error-404.html"
+                          ><img
+                            src="https://m.media-amazon.com/images/M/MV5BNjY0MWFlMjgtNGNiNC00YjcyLWJlNWUtMGY0NTg2MzZlNzQ2XkEyXkFqcGc@._V1_QL75_UX1230_.jpg"
+                            alt="..."
+                            class="img-fluid rounded-top"
+                          />
+                          <div class="p-2">
+                            <h5 class="luckiest-guy-regular" style="color: #d95043">
+                                E4: El Dragón Rojo y El Dorado
+                            </h5>
+                            <span style="color: grey"
+                              >+18 <i class="fa-solid fa-clock"></i> 56min
+                              2024</span
+                            >
+                            <p>
+                                En ausencia de Rhaenyra y Daemon, Rhaenys busca calmar al Consejo Negro mientras Cole organiza una campaña en las Tierras de la Corona.
+                            </p>
+                          </div>
+                        </a>
+                      </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 my-3 details-info">
+                    <div class="m-2 chapter border rounded">
+                        <a href="/pages/error-404.html"
+                          ><img
+                            src="https://m.media-amazon.com/images/M/MV5BM2Y5YjVkNzktZWI2OS00MTA3LTg2NjYtMDg3NWQzMWZkOWZhXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_QL75_UX547.5_.jpg"
+                            alt="..."
+                            class="img-fluid rounded-top"
+                          />
+                          <div class="p-2">
+                            <h5 class="luckiest-guy-regular" style="color: #d95043">
+                                E5: El Regente
+                            </h5>
+                            <span style="color: grey"
+                              >+18 <i class="fa-solid fa-clock"></i> 1h 3min
+                              2024</span
+                            >
+                            <p>
+                                Mientras los Verdes evalúan cómo llenar un vacío en el Consejo de Aegon, Daemon intenta conseguir que los Bracken se rindan.
+                            </p>
+                          </div>
+                        </a>
+                      </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 my-3 details-info">
+                    <div class="m-2 chapter border rounded">
+                        <a href="/pages/error-404.html"
+                          ><img
+                            src="https://m.media-amazon.com/images/M/MV5BN2RiNWU4MGUtNDA1Ny00MDgzLTg5ODktMzllMTVkNmEwNGI2XkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_QL75_UX607.5_.jpg"
+                            alt="..."
+                            class="img-fluid rounded-top"
+                          />
+                          <div class="p-2">
+                            <h5 class="luckiest-guy-regular" style="color: #d95043">
+                                E6: La Plebe
+                            </h5>
+                            <span style="color: grey"
+                              >+18 <i class="fa-solid fa-clock"></i> 1h 8min
+                              2024</span
+                            >
+                            <p>
+                                Con pocas opciones a su favor, Rhaenyra se embarca en una misión arriesgada. Aemond toma medidas para renovar el Consejo Verde.
+                            </p>
+                          </div>
+                        </a>
+                      </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 my-3 details-info">
+                    <div class="m-2 chapter border rounded">
+                        <a href="/pages/error-404.html"
+                          ><img
+                            src="https://m.media-amazon.com/images/M/MV5BNjY0MWFlMjgtNGNiNC00YjcyLWJlNWUtMGY0NTg2MzZlNzQ2XkEyXkFqcGc@._V1_QL75_UX1230_.jpg"
+                            alt="..."
+                            class="img-fluid rounded-top"
+                          />
+                          <div class="p-2">
+                            <h5 class="luckiest-guy-regular" style="color: #d95043">
+                                E7: La Cosecha Roja
+                            </h5>
+                            <span style="color: grey"
+                              >+18 <i class="fa-solid fa-clock"></i> 1h 4min
+                              2024</span
+                            >
+                            <p>
+                                Mientras Rhaenyra busca ganar ventaja por medios inusuales, Daemon presiona a un joven lord para que convoque a sus vasallos.
+                            </p>
+                          </div>
+                        </a>
+                      </div>
+                </div>
+              </div>
+            </details>
+          </div>
+          <div class="col-12 my-5">
+            <details>
+              <summary class="title-accordion d-flex justify-content-evenly">
+                Información
+              </summary>
+              <div class="row d-flex justify-content-center text-center">
+                <div class="col-sm-12 col-md-3 my-3 details-info">
+                  <a href="/pages/error-404.html" target="_blank"
+                    ><h4 class="data-info-title anton-regular">
+                      Directores
+                    </h4></a
+                  >
+                  <p>Clare Kilner</p>
+                  <p>Geeta Vasant Patel</p>
+                  <p>Miguel Sapochnik</p>
+                  <p>Greg Yaitanes</p>
+                  <p>Alan Taylor</p>
+                  <p>Andrij Parekh</p>
+                  <p>Loni Peristere</p>
+                </div>
+                <div class="col-sm-12 col-md-3 my-3 details-info">
+                  <a href="/pages/error-404.html" target="_blank"
+                    ><h4 class="data-info-title anton-regular">
+                      Escritores
+                    </h4></a
+                  >
+                  <p>Ryan J. Condal</p>
+                  <p>George R.R. Martin</p>
+                  <p>Ti Mikkel</p>
+                  <p>Sara Hess</p>
+                  <p>Eileen Shim</p>
+                  <p>David Hancock</p>
+                </div>
+                <div class="col-sm-12 col-md-3 my-3 details-info">
+                  <a href="/pages/error-404.html" target="_blank"
+                    ><h4 class="data-info-title anton-regular">Productor</h4></a
+                  >
+                  <p>Ryan J. Condal</p>
+                  <p>Toby Ford</p>
+                  <p>Vince Gerardis</p>
+                  <p>Sara Hess</p>
+                  <p>George R.R. Martin</p>
+                  <p>Pam Fitzgerald</p>
+                </div>
+                <div class="col-sm-12 col-md-3 my-3 details-info">
+                  <a href="/pages/error-404.html" target="_blank"
+                    ><h4 class="data-info-title anton-regular">Reparto</h4></a
+                  >
+                  <p>Matt Smith</p>
+                  <p>Fabien Frankel</p>
+                  <p>Steve Toussaint</p>
+                  <p>Emma D'Arcy</p>
+                </div>
+              </div>
+            </details>
+          </div>
+          <div class="col-12 my-4">
+            <div class="d-flex details-infos align-items-center">
+                <h5 class="anton-regular">Sugerencias</h5>
+                <a href="/pages/drama-series-1.html" target="_blank" class="mx-3">(Ver Mas)</a>
+            </div>
+            
+            <div class="row">
+              <div class="col-6 col-lg-3">
+                <div class="m-2 suggestion">
+                  <a href="/pages/error-404.html"
+                    ><img
+                      src="https://myhotposters.com/cdn/shop/products/mHP1605_1024x1024.jpeg?v=1571444588"
+                      alt="..."
+                      class="h-100 w-100 rounded"
+                  /></a>
+                </div>
+                <div class="m-2 suggestion">
+                  <a href="/pages/error-404.html"
+                    ><img
+                      src="https://i0.wp.com/imgs.hipertextual.com/wp-content/uploads/2022/11/the-last-of-us-hbo-portada.jpg?fit=2160%2C1501&quality=50&strip=all&ssl=1"
+                      alt="..."
+                      class="h-100 w-100 rounded"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="col-6 col-lg-3">
+                <div class="m-2 suggestion">
+                  <a href="/pages/error-404.html"
+                    ><img
+                      src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/30f98633204499.56a3dbaa5d764.jpg"
+                      alt="..."
+                      class="h-100 w-100 rounded"
+                  /></a>
+                </div>
+                <div class="m-2 suggestion">
+                  <a href="/pages/error-404.html"
+                    ><img
+                      src="https://m.media-amazon.com/images/M/MV5BNzg1Mzg4OTA5NV5BMl5BanBnXkFtZTgwODgwNjcwODM@._V1_QL75_UX598.5_.jpg"
+                      alt="..."
+                      class="h-100 w-100 rounded"
+                  /></a>
+                </div>
+              </div>
+              <div class="d-none d-lg-block col-6 col-lg-3">
+                <div class="m-2 suggestion">
+                  <a href="/pages/error-404.html"
+                    ><img
+                      src="https://m.media-amazon.com/images/M/MV5BZDE0ODVlYjktNjJiMC00ODk4LWIwNTktMWRhZmZiOGFhYmUwXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_QL75_UX1230_.jpg"
+                      alt="..."
+                      class="h-100 w-100 rounded"
+                  /></a>
+                </div>
+                <div class="m-2 suggestion">
+                  <a href="/pages/error-404.html"
+                    ><img
+                      src="https://m.media-amazon.com/images/M/MV5BMTQ3ZjBiMjEtNDZjNi00ZWFhLTg1NDctYjJlYjBmNWRlMjc3XkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_QL75_UX1230_.jpg"
+                      alt="..."
+                      class="h-100 w-100 rounded"
+                  /></a>
+                </div>
+              </div>
+              <div class="d-none d-lg-block col-6 col-lg-3">
+                <div class="m-2 suggestion">
+                  <a href="/pages/error-404.html"
+                    ><img
+                      src="https://thewild.com.ar/wp-content/uploads/2017/09/vikings-fondo-blanco.jpg"
+                      alt="..."
+                      class="h-100 w-100 rounded"
+                  /></a>
+                </div>
+                <div class="m-2 suggestion">
+                  <a href="/pages/error-404.html"
+                    ><img
+                      src="https://play-lh.googleusercontent.com/DFUI-vYtZ8HQDWOZI-nDSjI3sRrWnOwegfXpmaGFw_Wp_vBZFW4iGMpdlLR61sODXWfX"
+                      alt="..."
+                      class="h-100 w-100 rounded"
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content bg-modal text-light">
+          <div class="modal-header">
+            <h2 class="modal-title fs-5 anton-regular" id="exampleModalLabel">
+              Trailer 
+            </h2>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <iframe
+              class="w-100"
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/339paLFRKlo?si=XRwcG9IcHEGeXMqv"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="loginModal"
+      tabindex="-1"
+      aria-labelledby="loginModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="loginModalLabel">
+              Iniciar sesión
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group mb-3">
+                <label for="email">Correo Electrónico</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="Ingresa tu correo"
+                  maxlength="60"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="password">Contraseña</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="password"
+                  placeholder="Ingresa tu contraseña"
+                  minlength="6"
+                  maxlength="60"
+                  required
+                />
+              </div>
+              <div class="form-check mt-3 form-switch">
+                <input type="checkbox" class="form-check-input" id="check1" />
+                <label class="form-check-label" id="check1">Recuerdame.</label>
+              </div>
+
+              <button type="submit" class="btn btn-primary mt-4">
+                Iniciar Sesión
+              </button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <p>¿Primera vez en Wired?</p>
+            <a href="./pages/plans.html" class="btn btn-link">Suscribite acá</a>
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Cerrar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="exampleModalBus"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content bg-secondary-subtle">
+          <div class="modal-body">
+            <button
+              type="button"
+              class="btn-close position-absolute end-0 mx-4 mb-5"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+
+            <form>
+              <div class="mb-3">
+                <label for="text" class="form-label text-secondary"
+                  >Encuentra tu próxima:</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="text"
+                  placeholder="Película, Serie..."
+                  aria-describedby="buscsdorText"
+                  required
+                  maxlength="15"
+                />
+              </div>
+
+              <div class="d-flex justify-content-end">
+                <button type="submit" class="m-1 btn btn-danger">Buscar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <footer class="bg-dark footer">
+      <div class="grupo1">
+        <div class="box">
+          <figure>
+            <a href="">
+              <img src="/assets/img/logo-wired.png" alt="Logo Wired" />
+            </a>
+          </figure>
+        </div>
+
+        <div class="box">
+          <h4 class="text-uppercase mb-4 fw-bold text-danger">Compania</h4>
+          <ul class="px-0">
+            <li>
+              <a class="text-secondary" href="/pages/about-us.html">Nosotros</a>
+            </li>
+            <li><a class="text-secondary" href="#">Suscripción</a></li>
+            <li>
+              <a class="text-secondary" href="/pages/contact.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="box">
+          <h4 class="text-uppercase mb-4 fw-bold text-danger">Siguenos</h4>
+          <div class="redes">
+            <a
+              href="https://es-la.facebook.com/login/device-based/regular/login/"
+              target="_blank"
+              class="text-secondary"
+              ><i class="fa-brands fa-square-facebook"></i
+            ></a>
+
+            <a
+              href="https://www.instagram.com/accounts/emailsignup/"
+              target="_blank"
+              class="text-secondary"
+              ><i class="fa-brands fa-square-instagram"></i
+            ></a>
+
+            <a
+              href="https://x.com/i/flow/login"
+              target="_blank"
+              class="text-secondary"
+              ><i class="fa-brands fa-square-twitter"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="grupo2 bg-dark text-secondary text-center">
+        <small>&copy; 2024 - Todos los Derechos Reservados.</small>
+      </div>
+    </footer>
+
+  </body>
+</html>

@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/cda34ee0ad.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../css/login-subscription.css" />
+    <title>Document</title>
+  </head>
+  <body class="body-backg">
+    <header>
+      <nav class="navbar navbar-expand-lg px-5">
+        <div class="container-fluid">
+          <a class="navbar-brand logo-wired" href="/index.html"
+            ><img src="/assets/img/logo-wired.png" alt="logo" class="w-100"
+          /></a>
+
+          <button
+            class="navbar-toggler bg-secondary-subtle boton-hamburguesa"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div
+            class="collapse navbar-collapse contenedor-opciones"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4 ul-contenido">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/index.html"
+                  >INICIO</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/error-404.html" target="_blank">SERIES</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/error-404.html" target="_blank"> PELICULAS </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/error-404.html" target="_blank"
+                  ><i class="fa-solid fa-plus"></i> MI LISTA</a
+                >
+              </li>
+            </ul>
+
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 mx-lg-3">
+              <li class="nav-item my-md-1">
+                <button
+                  type="button"
+                  class="btn btn-transparent mx-1 mx-lg-2 boton-search"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModalBus"
+                >
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+              </li>
+              <li class="nav-item">
+                <button
+                  type="button"
+                  class="btn text-danger px-0 p-lg-2 d-none"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModalBus"
+                >
+                  Buscar
+                </button>
+              </li>
+
+              <li class="nav-item my-md-1">
+                <button
+                  type="button"
+                  class="btn btn-danger mx-1 my-3 my-md-1 mx-lg-2 boton-user"
+                  data-bs-toggle="modal"
+                  data-bs-target="#loginModal"
+                >
+                  <i class="fa-solid fa-user"></i>
+                </button>
+              </li>
+              <li class="nav-item">
+                <button
+                  type="button"
+                  class="btn text-danger d-none px-0 p-lg-2"
+                  data-bs-toggle="modal"
+                  data-bs-target="#loginModal"
+                >
+                  Iniciar sesion
+                </button>
+              </li>
+
+              <li class="nav-item my-md-1">
+                <button
+                  type="button"
+                  class="btn text-danger px-0 p-lg-2 d-none boton-suscribirse"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModalReg"
+                >
+                  Suscribirse
+                </button>
+              </li>
+              <li class="nav-item">
+                <a href="/pages/plans.html"><button
+                  type="button"
+                  class="btn btn-danger px-2 mt-lg-1"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModalReg"
+                >
+                  Suscribirse
+                </button></a>
+                
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container mt-3 mb-3">
+        <div class="row justify-content-center">
+        
+          <div class="col-md-10">
+            <form class="p-4 form-cont">
+              <h2 class="text-light text-center fw-bold">Crear cuenta</h2>
+              <hr class="border-light" />
+              <div class="row">
+                <div class="form-group mb-3 col-md-6">
+                  <label for="name" class="text-light"
+                    ><i class="bi bi-person"></i> Nombre</label
+                  >
+                  <input
+                    type="name"
+                    class="form-control"
+                    maxlength="40"
+                    minlength="3"
+                    placeholder="Ingresa tu nombre"
+                    required
+                  />
+                </div>
+                <div class="form-group mb-3 col-md-6">
+                  <label for="name" class="text-light"
+                    ><i class="bi bi-person"></i> Apellido</label
+                  >
+                  <input
+                    type="name"
+                    class="form-control"
+                    maxlength="100"
+                    minlength="3"
+                    placeholder="Ingresa tu apellido"
+                    required
+                  />
+                </div>
+                <div class="form-group mb-3">
+                  <label for="registerEmail" class="text-light"
+                    ><i class="bi bi-envelope"></i> Correo electrónico</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="registerEmail"
+                    placeholder="Ingresa tu correo"
+                    maxlength="60"
+                    required
+                  />
+                </div>
+                <div class="form-group mb-3 col-md-6">
+                  <label for="password" class="text-light"
+                    ><i class="bi bi-key"></i> Contraseña</label
+                  >
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="password"
+                    placeholder="Ingresa tu contraseña (mínimo 6)"
+                    maxlength="40"
+                    minlength="6"
+                    required
+                  />
+                </div>
+                <div class="form-group mb-3 col-md-6">
+                  <label for="passwordConfirm" class="text-light"
+                    >Confirmar contraseña</label
+                  >
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="passwordConfirm"
+                    placeholder="Ingresa tu contraseña de nuevo"
+                    maxlength="40"
+                    minlength="6"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="cardNumber" class="text-light"
+                    ><i class="bi bi-credit-card-2-back"></i> Número de la
+                    tarjeta</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="cardNumber"
+                    placeholder="Número de la tarjeta de crédito"
+                    pattern="[0-9]{16}"
+                    required
+                  />
+                  <p class="form-text text-secondary">
+                    * Introduce un número de tarjeta de 16 dígitos.
+                  </p>
+                </div>
+                <div class="form-group col-md-4">
+                  <label for="cvv" class="text-light">
+                    Código de seguridad</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="cvv"
+                    placeholder="CVV"
+                    pattern="[0-9]{3}"
+                    required
+                  />
+                  <p class="form-text text-secondary">
+                    * Introduce el código de 3 dígitos en el reverso de tu
+                    tarjeta.
+                  </p>
+                </div>
+                <div class="form-group col-md-4">
+                  <label for="expiryDate" class="text-light"
+                    >Mes de expiración</label
+                  >
+                  <select class="form-control" id="expiryDate" required>
+                    <option value="" disabled selected>MM</option>
+                    <option value="01">01</option>
+                    <option value="02">02</option>
+                    <option value="03">03</option>
+                  </select>
+                </div>
+                <div class="form-group col-md-4">
+                  <label for="expiryYear" class="text-light"
+                    >Año de expiración</label
+                  >
+                  <select class="form-control" id="expiryYear" required>
+                    <option value="" disabled selected>AA</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-check mx-3 form-switch">
+                <input type="checkbox" class="form-check-input" id="check1" />
+                <label class="form-check-label text-light" id="check1" required
+                  >Acepto los términos y condiciones.
+                  <a href="" class="text-white">Ver aquí.</a></label
+                >
+              </div>
+              <button type="submit" class="btn btn-light text-dark mt-3 w-100">
+                Crear cuenta
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div
+    class="modal fade"
+    id="exampleModalBus"
+    tabindex="-1"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog">
+      <div class="modal-content bg-secondary-subtle">
+        <div class="modal-body">
+          <button
+            type="button"
+            class="btn-close position-absolute end-0 mx-4 mb-5"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+
+          <form>
+            <div class="mb-3">
+              <label for="text" class="form-label text-secondary"
+                >Encuentra tu próxima:</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="text"
+                placeholder="Película, Serie..."
+                aria-describedby="buscsdorText"
+                required
+                maxlength="15"
+              />
+            </div>
+
+            <div class="d-flex justify-content-end">
+              <button type="submit" class="m-1 btn btn-danger">Buscar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <footer class="bg-dark footer">
+      <div class="grupo1">
+        <div class="box">
+          <figure>
+            <a href="">
+              <img src="/assets/img/logo-wired.png" alt="Logo Wired" />
+            </a>
+          </figure>
+        </div>
+
+        <div class="box">
+          <h4 class="text-uppercase mb-4 fw-bold text-danger">Compania</h4>
+          <ul class="px-0">
+            <li>
+              <a class="text-secondary" href="/pages/about-us.html">Nosotros</a>
+            </li>
+            <li><a class="text-secondary" href="#">Suscripción</a></li>
+            <li>
+              <a class="text-secondary" href="/pages/contact.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="box">
+          <h4 class="text-uppercase mb-4 fw-bold text-danger">Siguenos</h4>
+          <div class="redes">
+            <a
+              href="https://es-la.facebook.com/login/device-based/regular/login/"
+              target="_blank"
+              class="text-secondary"
+              ><i class="fa-brands fa-square-facebook"></i
+            ></a>
+
+            <a
+              href="https://www.instagram.com/accounts/emailsignup/"
+              target="_blank"
+              class="text-secondary"
+              ><i class="fa-brands fa-square-instagram"></i
+            ></a>
+
+            <a
+              href="https://x.com/i/flow/login"
+              target="_blank"
+              class="text-secondary"
+              ><i class="fa-brands fa-square-twitter"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="grupo2 bg-dark text-secondary text-center">
+        <small>&copy; 2024 - Todos los Derechos Reservados.</small>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
