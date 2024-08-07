@@ -82,6 +82,32 @@
   padding-bottom: 72px;
 }
 
+.cont-banner {
+  background-image: url(https://previews.123rf.com/images/9dreamstudio/9dreamstudio1907/9dreamstudio190703245/127667443-profesi%C3%B3n-de-cineasta-con-claqueta-y-palomitas-de-ma%C3%ADz-sobre-fondo-amarillo-vista-superior.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  font-family: var(--fuente-primaria);
+  p {
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .display-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  button {
+    border-radius: 20px;
+  }
+}
+
 .carousel-contenedor {
   margin: 120px 0;
 }
@@ -90,6 +116,15 @@
   height: 160px;
 }
 
+.titulo-comedia {
+  display: flex;
+  justify-content: space-between;
+}
+.size-card {
+  img {
+    height: 152.14px;
+  }
+}
 @media screen and (max-width: 480px) {
   .botones-pelicula-contenedor {
     flex-direction: column;
@@ -110,6 +145,14 @@
   .cont-sweet {
     display: flex;
     justify-content: center;
+  }
+  .titulo-comedia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .cont-banner {
+    background-size: 600%;
   }
 }
 
