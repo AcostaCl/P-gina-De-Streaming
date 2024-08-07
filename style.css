@@ -90,8 +90,8 @@ header {
         background-color: var(--color3);
         content: "";
         height: 3px;
-        position: absolute;
         width: 0;
+        position: absolute;
         bottom: -3px;
         transition: width 0.3s ease-in-out;
       }
@@ -109,43 +109,38 @@ header {
   }
 }
 
-/* ? footer */
-
 .footer {
   width: 100%;
   position: relative;
 
   .grupo1 {
+    margin: auto;
+    padding: 45px 0;
     width: 100%;
     max-width: 1200px;
-    margin: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 50px;
-    padding: 45px 0;
 
     .box {
       h4 {
-        text-transform: capitalize;
-        margin-bottom: 30px;
         position: relative;
       }
       h4:before {
+        width: 50px;
         content: "";
         position: absolute;
         left: 50;
         bottom: -10px;
         height: 2px;
         box-sizing: border-box;
-        width: 50px;
         background-color: var(--color3);
       }
       ul {
-        li:not(:last-child) {
+        li {
           margin-bottom: 10px;
         }
         a {
-          text-transform: capitalize;
           display: block;
           transition: all 0.3s ease;
         }
@@ -160,31 +155,24 @@ header {
         justify-content: center;
         align-items: center;
         img {
-          width: 250px;
+          width: 200px;
         }
       }
       h4 {
-        margin-bottom: 25px;
         font-size: 20px;
       }
-      p {
-        margin-bottom: 10px;
-      }
+
       .redes {
         font-size: x-large;
       }
     }
   }
   .grupo2 {
-    border-top: 2px solid #584f4f39;
-
     padding: 15px 10px;
+    border-top: 2px solid #584f4f39;
     text-align: center;
-    color: gainsboro;
   }
 }
-
-/* ? media queries //////////////////////////////////// */
 
 @media screen and (max-width: 480px) {
   .logo-wired {
@@ -198,7 +186,6 @@ header {
     span {
       height: 25px;
       display: flex;
-
       justify-content: center;
     }
   }
@@ -238,6 +225,13 @@ header {
   .footer {
     .grupo1 {
       padding: 25px 0;
+      .box {
+        figure {
+          img {
+            width: 150px;
+          }
+        }
+      }
     }
   }
 }
