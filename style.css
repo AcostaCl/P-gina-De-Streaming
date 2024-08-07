@@ -22,7 +22,6 @@
   --fuente-primaria: "DM Sans", sans-serif;
   --fuente-secundaria: "PT Serif", serif;
   --color-primario: #0d0d0d;
-  --color2: #260120;
   --color3: rgb(207, 5, 5);
 }
 
@@ -40,10 +39,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-
-.logo-wired {
-  width: 30%;
 }
 
 a {
@@ -68,9 +63,16 @@ header {
     color: white;
   }
 
+  .logo-wired {
+    width: 15%;
+  }
+
   .contenedor-opciones {
     a {
       color: white;
+    }
+    .boton-user {
+      border-radius: 50%;
     }
   }
 
@@ -168,6 +170,9 @@ header {
       p {
         margin-bottom: 10px;
       }
+      .redes {
+        font-size: x-large;
+      }
     }
   }
   .grupo2 {
@@ -181,22 +186,11 @@ header {
 
 /* ? media queries //////////////////////////////////// */
 
-@media only screen and (min-width: 480px) {
-  .logo-wired {
-    width: 20%;
-  }
-
-  .contenedor-opciones {
-    display: flex;
-    justify-content: space-between;
-
-    .boton-user {
-      border-radius: 50%;
-    }
-  }
-}
-
 @media screen and (max-width: 480px) {
+  .logo-wired {
+    width: 30%;
+  }
+
   .boton-hamburguesa {
     width: 50px;
     height: 35px;
@@ -222,6 +216,9 @@ header {
             width: 150px;
           }
         }
+        .redes {
+          font-size: medium;
+        }
       }
     }
     .grupo2 {
@@ -231,24 +228,16 @@ header {
 }
 
 @media screen and (max-width: 768px) {
+  .logo-wired {
+    width: 20%;
+  }
+  .contenedor-opciones {
+    display: flex;
+    justify-content: space-between;
+  }
   .footer {
     .grupo1 {
       padding: 25px 0;
     }
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  .logo-wired {
-    width: 15%;
-  }
-
-  .contenedor-opciones {
-    display: flex;
-    justify-content: space-around;
-  }
-
-  .redes {
-    font-size: x-large;
   }
 }
