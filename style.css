@@ -74,8 +74,17 @@ header {
     color: white;
   }
 
-  .logo-wired {
-    width: 15%;
+  .navbar {
+    width: 100dvw;
+    .div-nav {
+      width: 100dvw;
+      .logo-wired {
+        width: 15%;
+        .logo {
+          width: 100%;
+        }
+      }
+    }
   }
 
   .contenedor-opciones {
@@ -117,6 +126,9 @@ header {
         width: 100%;
       }
     }
+  }
+  .boton-search {
+    width: 3.5rem;
   }
 }
 
@@ -187,7 +199,7 @@ header {
 
 @media screen and (max-width: 480px) {
   .logo-wired {
-    width: 30%;
+    width: 10%;
   }
 
   .boton-hamburguesa {
