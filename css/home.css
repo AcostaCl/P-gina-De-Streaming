@@ -10,11 +10,11 @@ body {
 main {
   background: linear-gradient(
     to top,
-    rgba(23, 23, 22, 0.219),
+    rgba(23, 23, 22, 0.433),
     rgba(23, 23, 22, 0.71),
-    rgba(23, 23, 22, 0.434),
-    rgba(23, 23, 22, 0.822),
-    rgba(0, 0, 0, 0.703)
+    rgba(23, 23, 22, 0.297),
+    rgba(23, 23, 22, 0.739),
+    rgba(0, 0, 0, 0.898)
   );
   color: white;
   width: 100%;
