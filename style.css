@@ -1,133 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;1,300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap");
-
-:root {
-  --color1: #260120;
-  --color2: #390540;
-  --color3: #8630bf;
-  --color4: #d95043;
-  --color5: #0d0d0d;
-}
-
-.amatic-sc-regular {
-  font-family: "Amatic SC", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.amatic-sc-bold {
-  font-family: "Amatic SC", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.bg-color1 {
-  background-color: var(--color1);
-}
-
-.bg-color2 {
-  background-color: var(--color2);
-}
-
-.bg-color3 {
-  background-color: var(--color3);
-}
-
-.bg-color4 {
-  background-color: var(--color4);
-}
-
-.bg-color5 {
-  background-color: var(--color5);
-}
-
-.text-color1 {
-  color: var(--color1);
-}
-
-.text-color2 {
-  color: var(--color2);
-}
-
-.text-color3 {
-  color: var(--color3);
-}
-
-.text-color4 {
-  color: var(--color4);
-}
-
-.text-color5 {
-  color: var(--color5);
-}
-
-.font1 {
-  font-family: "Merriweather", serif;
-  font-weight: 300;
-  font-style: normal;
-}
-
-.font2 {
-  font-family: "PT Serif", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.anton-sc-regular {
-  font-family: "Anton SC", sans-serif;
-  font-weight: 1000;
-  font-style: normal;
-}
-
-.anton-regular {
-  font-family: "Anton", sans-serif;
-  font-weight: 1000;
-  font-style: normal;
-}
-
-.bungee-outline-regular {
-  font-family: "Bungee Outline", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.anton-sc-regular {
-  font-family: "Anton SC", sans-serif;
-  font-weight: 1000;
-  font-style: normal;
-}
-
-.anton-regular {
-  font-family: "Anton", sans-serif;
-  font-weight: 1000;
-  font-style: normal;
-}
-
-.bungee-outline-regular {
-  font-family: "Bungee Outline", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.anton-sc-regular {
-  font-family: "Anton SC", sans-serif;
-  font-weight: 1000;
-  font-style: normal;
-}
-
-.anton-regular {
-  font-family: "Anton", sans-serif;
-  font-weight: 1000;
-  font-style: normal;
-}
-
-.bungee-outline-regular {
-  font-family: "Bungee Outline", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;1,300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
 
 /* .merriweather-light {
@@ -178,6 +49,17 @@ ul {
   list-style: none;
 }
 
+.header {
+  border-bottom: none;
+  background: linear-gradient(
+    to bottom,
+    rgba(11, 12, 11, 0.871),
+    rgba(0, 0, 0, 0.912)
+  );
+  position: fixed;
+  z-index: 1;
+}
+
 header {
   border-bottom: none;
   background: linear-gradient(
@@ -192,8 +74,17 @@ header {
     color: white;
   }
 
-  .logo-wired {
-    width: 15%;
+  .navbar {
+    width: 100dvw;
+    .div-nav {
+      width: 100dvw;
+      .logo-wired {
+        width: 15%;
+        .logo {
+          width: 100%;
+        }
+      }
+    }
   }
 
   .contenedor-opciones {
@@ -235,6 +126,9 @@ header {
         width: 100%;
       }
     }
+  }
+  .boton-search {
+    width: 3.5rem;
   }
 }
 
@@ -292,7 +186,7 @@ header {
       }
 
       .redes {
-        font-size: x-large;
+        font-size: 1.6em;
       }
     }
   }
@@ -304,8 +198,19 @@ header {
 }
 
 @media screen and (max-width: 480px) {
-  .logo-wired {
-    width: 30%;
+  header {
+    .navbar {
+      width: 100dvw;
+      .div-nav {
+        width: 100dvw;
+        .logo-wired {
+          width: 30%;
+          .logo {
+            width: 100%;
+          }
+        }
+      }
+    }
   }
 
   .boton-hamburguesa {
@@ -320,20 +225,22 @@ header {
   }
   .footer {
     .grupo1 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       width: 90%;
-      grid-template-columns: repeat(1, 1fr);
-      gap: 20px;
-      font-size: 10px;
+      font-size: 12px;
 
       .box {
-        figure {
-          margin: 0;
-          img {
-            width: 150px;
-          }
-        }
+        display: flex;
+        flex-direction: column;
+
         .redes {
           font-size: medium;
+          i {
+            width: 1.3rem;
+            font-size: 1.3em;
+          }
         }
       }
     }
@@ -344,13 +251,26 @@ header {
 }
 
 @media screen and (max-width: 768px) {
-  .logo-wired {
-    width: 20%;
+  header {
+    .navbar {
+      width: 100dvw;
+      .div-nav {
+        width: 100dvw;
+        .logo-wired {
+          width: 25%;
+          .logo {
+            width: 100%;
+          }
+        }
+      }
+    }
   }
+
   .contenedor-opciones {
     display: flex;
     justify-content: space-between;
   }
+
   .footer {
     .grupo1 {
       padding: 25px 0;
