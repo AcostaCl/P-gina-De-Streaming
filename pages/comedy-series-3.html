@@ -19,7 +19,128 @@
     <title>Comedia</title>
   </head>
   <body>
-    <header></header>
+    <header>
+      <nav class="navbar navbar-expand-lg px-5">
+        <div class="container-fluid">
+          <a class="navbar-brand logo-wired" href="/index.html"
+            ><img src="/assets/img/logo-wired.png" alt="logo" class="w-100"
+          /></a>
+
+          <button
+            class="navbar-toggler bg-secondary-subtle boton-hamburguesa"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div
+            class="collapse navbar-collapse contenedor-opciones"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4 ul-contenido">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/index.html"
+                  >INICIO</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/" target="_blank">SERIES</a>
+              </li>
+
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="/pages/error-404.html"
+                  target="_blank"
+                >
+                  PELICULAS
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/error-404.html" target="_blank"
+                  ><i class="fa-solid fa-plus"></i> MI LISTA</a
+                >
+              </li>
+              
+            </ul>
+
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 mx-lg-3">
+              <li class="nav-item my-md-1">
+                <button
+                  type="button"
+                  class="btn btn-transparent mx-1 mx-lg-2 boton-search"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModalBus"
+                >
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+              </li>
+              <li class="nav-item">
+                <button
+                  type="button"
+                  class="btn text-danger px-0 p-lg-2 d-none"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModalBus"
+                >
+                  Buscar
+                </button>
+              </li>
+
+              <li class="nav-item my-md-1">
+                <button
+                  type="button"
+                  class="btn btn-danger mx-1 my-3 my-md-1 mx-lg-2 boton-user"
+                  data-bs-toggle="modal"
+                  data-bs-target="#loginModal"
+                >
+                  <i class="fa-solid fa-user"></i>
+                </button>
+              </li>
+              <li class="nav-item">
+                <button
+                  type="button"
+                  class="btn text-danger d-none px-0 p-lg-2"
+                  data-bs-toggle="modal"
+                  data-bs-target="#loginModal"
+                >
+                  Iniciar sesion
+                </button>
+              </li>
+
+              <li class="nav-item my-md-1">
+                <button
+                  type="button"
+                  class="btn text-danger px-0 p-lg-2 d-none boton-suscribirse"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModalReg"
+                >
+                  Suscribirse
+                </button>
+              </li>
+              <li class="nav-item">
+                <a href="/pages/plans.html"
+                  ><button
+                    type="button"
+                    class="btn btn-danger px-2 mt-lg-1"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModalReg"
+                  >
+                    Suscribirse
+                  </button></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
     <main>
         <div class="container text-light">
             <div class="text-center">
