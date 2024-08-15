@@ -198,8 +198,19 @@ header {
 }
 
 @media screen and (max-width: 480px) {
-  .logo-wired {
-    width: 10%;
+  header {
+    .navbar {
+      width: 100dvw;
+      .div-nav {
+        width: 100dvw;
+        .logo-wired {
+          width: 30%;
+          .logo {
+            width: 100%;
+          }
+        }
+      }
+    }
   }
 
   .boton-hamburguesa {
@@ -214,20 +225,22 @@ header {
   }
   .footer {
     .grupo1 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       width: 90%;
-      grid-template-columns: repeat(1, 1fr);
-      gap: 20px;
-      font-size: 10px;
+      font-size: 12px;
 
       .box {
-        figure {
-          margin: 0;
-          img {
-            width: 150px;
-          }
-        }
+        display: flex;
+        flex-direction: column;
+
         .redes {
           font-size: medium;
+          i {
+            width: 1.3rem;
+            font-size: 1.3em;
+          }
         }
       }
     }
@@ -238,13 +251,26 @@ header {
 }
 
 @media screen and (max-width: 768px) {
-  .logo-wired {
-    width: 20%;
+  header {
+    .navbar {
+      width: 100dvw;
+      .div-nav {
+        width: 100dvw;
+        .logo-wired {
+          width: 30%;
+          .logo {
+            width: 100%;
+          }
+        }
+      }
+    }
   }
+
   .contenedor-opciones {
     display: flex;
     justify-content: space-between;
   }
+
   .footer {
     .grupo1 {
       padding: 25px 0;
