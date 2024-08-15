@@ -15,7 +15,6 @@ body {
   }
 }
 
-
 .titlecategory {
   margin-top: 80px;
 }
@@ -157,7 +156,6 @@ body {
   color: white;
 }
 
-
 .suggestion {
   transition: transform 0.3s ease-in-out;
   border: 1px solid black;
@@ -169,14 +167,13 @@ body {
   border-color: white;
 }
 
-
 @media (min-width: 1024px) {
   .suggestion {
     height: 300px;
   }
 }
 
-@media (min-width: 768px) and (max-width:1023px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .suggestion {
     height: 300px;
   }
