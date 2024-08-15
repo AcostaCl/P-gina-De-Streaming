@@ -161,6 +161,12 @@ main {
     display: flex;
     justify-content: center;
   }
+
+  .carousel-contenedor {
+    h2 {
+      text-align: center;
+    }
+  }
   .titulo-comedia {
     display: flex;
     flex-direction: column;
