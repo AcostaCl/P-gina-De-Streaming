@@ -213,10 +213,8 @@ header {
     }
   }
 
-
-  
   .logo-wired img {
-  scale: 2.5;
+    transform: scale(2.5);
   }
 
   .boton-hamburguesa {
@@ -273,8 +271,8 @@ header {
   }
 
   .logo-wired img {
-    scale: 2;
-    }
+    transform: scale (2);
+  }
 
   .contenedor-opciones {
     display: flex;
