@@ -1,85 +1,81 @@
 body {
-    background: rgb(38,1,32);
-    background: linear-gradient(180deg, rgba(38,1,32,1) 0%, rgba(57,5,64,1) 50%, rgba(13,13,13,1) 100%);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    height: 100vh;
-    margin: 0;
+  background: linear-gradient(-45deg, #211212, #4d2626, #230c0c, #632020);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
   }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 
 a {
   text-decoration: none;
 }
 
-
 .title {
   transition: transform 0.3s ease-in-out;
+  margin-top: 80px;
 }
+
 .title:hover {
   transform: scale(1.1);
 }
 
-  .btn-option {
-    transition: transform 0.3s ease-in-out;
-    border-radius: 12px;
-    font-size: 25px;
-  }
-  
-  .btn-option:hover {
-    background-color: #d95043;
-    transform: scale(1.2);
-    box-shadow: 0 4px 8px;
-  }
+.btn-none {
+  transform: scale(0.2 linear);
+}
 
-  .btn-none {
-    transform: scale(0.2 linear);
-    border-radius: 12px;
-    font-size: 25px;
-  }
+.btn-none:hover {
+  cursor: not-allowed;
+  background-color: black;
+}
 
-  .btn-none:hover {
-    cursor: not-allowed;
-    background-color: black;
-    
-    }
-  
-  
-  .filters {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .filter-select {
-    background-color: rgba(217, 80, 67,0.9);
-    border: none;
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
+.filters {
+  text-align: center;
+  margin-bottom: 20px;
+}
 
+.filter-select {
+  background-color: rgba(217, 80, 67, 0.9);
+  border: none;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
 
+.suggestion {
+  transition: transform 0.3s ease-in-out;
+  border: 1px solid black;
+  border-radius: 7px;
+  height: 250px;
+}
+.suggestion:hover {
+  transform: scale(1.03);
+  border-color: white;
+}
+
+@media (min-width: 1024px) {
   .suggestion {
-    transition: transform 0.3s ease-in-out;
-    border: 1px solid black;
-    border-radius: 7px;
-    height: 250px;
+    height: 300px;
   }
-  .suggestion:hover {
-    transform: scale(1.03);
-    border-color: white;
-  }
+}
 
-
-  @media (min-width: 1024px) {
-    .suggestion {
-      height: 400px;
-    }
+@media (min-width: 768px) and (max-width: 1023px) {
+  .suggestion {
+    height: 500px;
   }
+}
 
-  @media (min-width: 768px) and (max-width:1023px) {
-    .suggestion {
-      height: 500px;
-    }
+@media screen and (min-width: 768px) {
+  .title {
+    margin-top: 130px;
   }
+}
