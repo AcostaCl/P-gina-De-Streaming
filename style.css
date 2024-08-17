@@ -196,7 +196,8 @@ header {
     }
   }
 
-  .logo-wired img {
+  .logo-wired img { allcomedy
+  transform: scale (2.5);dev
     transform: scale(2.5);
   }
 
@@ -255,7 +256,19 @@ header {
     }
 
   .logo-wired img {
+allcomedy
     transform: scale (2);
+
+    transform: scale(2);
+
+    transform: scale (2);
+  }
+
+
+  .contenedor-opciones {
+    display: flex;
+    justify-content: space-between;
+ dev
   }
 
     .contenedor-opciones {

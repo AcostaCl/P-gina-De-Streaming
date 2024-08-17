@@ -1,57 +1,42 @@
 body {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #000;
-    color: #fff;
-    font-family: Arial, sans-serif;
-    text-align: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(45deg, #832e0e, #ff5e00, #ff9100);
+  background-size: 400% 400%;
 }
-
+.fondo404 {
+  background-image: url(../assets/img/Diseño\ sin\ título.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 .container {
-    max-width: 90%;
+  height: 40%;
+  max-width: 90%;
 }
-
-h1 {
-    font-size: 5em;
-    margin: 0;
+.btnborder {
+  border-color: white;
+}
+.btnborder:hover {
+  background-color: rgb(235, 158, 25);
+}
+.title404 {
+  font-size: 60px;
 }
 
 p {
-    font-size: 1.5em;
-}
-
-.home-button {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    font-size: 1em;
-    color: #000;
-    background-color: #fff;
-    border: none;
-    border-radius: 5px;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.home-button:hover {
-    background-color: #ddd;
+  font-size: 1.5em;
 }
 
 @media (max-width: 768px) {
-    h1 {
-        font-size: 3em;
-    }
+  h1 {
+    font-size: 3em;
+  }
 
-    p {
-        font-size: 1em;
-    }
-
-    .home-button {
-        font-size: 0.8em;
-        padding: 8px 16px;
-    }
+  p {
+    font-size: 1em;
+  }
 }
