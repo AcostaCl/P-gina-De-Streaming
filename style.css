@@ -214,6 +214,7 @@ header {
   }
 
   .logo-wired img {
+  transform: scale (2.5);
     transform: scale(2.5);
   }
 
@@ -270,9 +271,14 @@ header {
     }
   }
 
+
   .logo-wired img {
+
+    transform: scale(2);
+
     transform: scale (2);
   }
+
 
   .contenedor-opciones {
     display: flex;
