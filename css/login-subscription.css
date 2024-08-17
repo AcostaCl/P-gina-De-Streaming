@@ -7,7 +7,9 @@ html,
 body {
   overflow-x: hidden;
 }
-
+main {
+  margin-top: 8%;
+}
 .body-backg {
   background: linear-gradient(-45deg, #211212, #4d2626, #230c0c, #632020);
   background-size: 400% 400%;
