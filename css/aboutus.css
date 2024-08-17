@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
 body {
     margin: 0;
     padding: 0;
@@ -7,9 +10,21 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    background: linear-gradient(-45deg, #211212, #4d2626, #230c0c, #632020);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
 }
-
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 .container {
     max-width: 1000px;
     width: 100%;
@@ -57,8 +72,13 @@ h1 {
     color: #ccc;
 }
 
-@media (max-width: 768px) {
-    .card {
-        width: 100%;
-    }
-}
+
+a {
+    text-decoration: none;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  
