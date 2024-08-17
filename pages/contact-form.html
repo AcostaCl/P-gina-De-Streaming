@@ -22,7 +22,56 @@
     <title>Formulario de contacto</title>
   </head>
   <body>
-    <header></header>
+    <header class="header">
+      <nav class="navbar navbar-expand-lg px-5">
+        <div class="container-fluid div-nav">
+          <a class="navbar-brand logo-wired mx-md-4" href="/index.html"
+            ><img src="/assets/img/logo-wired.png" alt="logo" class="logo"
+          /></a>
+
+          <button
+            class="navbar-toggler bg-secondary-subtle boton-hamburguesa"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div
+            class="collapse navbar-collapse contenedor-opciones"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4 ul-contenido">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/index.html"
+                  >INICIO</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/drama-series-1.html">SERIES</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/drama-movies-1.html">
+                  PELICULAS
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/error-404.html" target="_blank"
+                  ><i class="fa-solid fa-plus"></i> MI LISTA</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
     <main>
       <div class="body-contenedor">
         <div class="container form-contenedor mb-4">
@@ -116,11 +165,67 @@
         </div>
       </div>
     </main>
+
+    <footer class="bg-dark footer">
+      <div class="grupo1">
+        <div class="box">
+          <figure>
+            <a href="/index.html">
+              <img src="/assets/img/logo-wired.png" alt="Logo Wired" />
+            </a>
+          </figure>
+        </div>
+
+        <div class="box mt-md-3">
+          <h4 class="text-uppercase mb-4 fw-bold text-danger">Compañia</h4>
+          <ul class="px-0">
+            <li>
+              <a class="text-secondary" href="/pages/about-us.html">Nosotros</a>
+            </li>
+            <li>
+              <a class="text-secondary" href="/pages/plans.html">Suscripción</a>
+            </li>
+            <li>
+              <a class="text-secondary" href="/pages/contact.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="box mt-md-3">
+          <h4 class="text-uppercase mb-4 fw-bold text-danger">Siguenos</h4>
+          <div class="redes">
+            <a
+              href="https://es-la.facebook.com/login/device-based/regular/login/"
+              target="_blank"
+              class="text-secondary"
+              ><i class="fa-brands fa-square-facebook"></i
+            ></a>
+
+            <a
+              href="https://www.instagram.com/accounts/emailsignup/"
+              target="_blank"
+              class="text-secondary"
+              ><i class="fa-brands fa-square-instagram"></i
+            ></a>
+
+            <a
+              href="https://x.com/i/flow/login"
+              target="_blank"
+              class="text-secondary"
+              ><i class="fa-brands fa-square-twitter"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="grupo2 bg-dark text-secondary text-center">
+        <small>&copy; 2024 - Todos los Derechos Reservados.</small>
+      </div>
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <footer></footer>
   </body>
 </html>
