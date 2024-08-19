@@ -1,16 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;1,300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+main {
+  margin-top: 10%;
+}
 
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #000;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: linear-gradient(-45deg, #211212, #4d2626, #230c0c, #632020);
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  color: #fff;
+  background: linear-gradient(-45deg, #211212, #4d2626, #230c0c, #632020);
   background-size: 400% 400%;
   animation: gradient 10s ease infinite;
 }
@@ -26,59 +25,87 @@ body {
   }
 }
 .container {
-    max-width: 1000px;
-    width: 100%;
-    padding: 20px;
+  max-width: 1000px;
+  width: 100%;
+  padding: 20px;
 }
 
-h1 {
-    text-align: center;
-    color: #fff;
+.banner {
+  max-height: 300px;
+  object-fit: cover;
+  object-position: center;
+  filter: brightness(0.5) contrast(1);
 }
-
+.texto-banner {
+  font-size: 45px;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+.imagen-mision {
+  width: 300px;
+  margin-left: 100px;
+  border-radius: 50px;
+}
 .team {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 30px;
 }
 
 .card {
-    background-color: #333;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 450px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  background-color: #631818;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 450px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card:hover {
+  border: 1px solid #fff;
+  box-shadow: inset 0 0 5px red, 0 0 5px red;
+  border-width: 5px;
 }
 
-.card img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin-bottom: 20px;
+.img-cardd {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  transform: rotate(-30deg);
+  transform: all 3s;
+  border-top: solid rgb(77, 8, 8) 4px;
+  border-bottom: solid rgb(65, 5, 5) 4px;
+}
+
+.img-cardd:hover {
+  transform: rotate(0);
 }
 
 .card h2 {
-    color: #fff;
-    margin: 10px 0;
+  color: #fff;
+  margin: 10px 0;
 }
 
 .card p {
-    color: #ccc;
+  color: #ccc;
 }
 
-
 a {
-    text-decoration: none;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+@media (max-width: 768px) {
+  .imagen-mision {
+    margin-left: 30px;
   }
-  
-  ul {
-    list-style: none;
-  }
-  
-  
+}

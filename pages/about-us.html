@@ -1,252 +1,434 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
-    <script src="https://kit.fontawesome.com/cda34ee0ad.js" crossorigin="anonymous"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/cda34ee0ad.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="/style.css" />
-    <link rel="stylesheet" href="/css/aboutus.css">
-</head>
+    <link rel="stylesheet" href="/css/aboutus.css" />
+  </head>
 
-
-<body>
+  <body>
     <header>
-        <nav class="navbar navbar-expand-lg px-5">
-            <div class="container-fluid div-nav">
-                <a class="navbar-brand logo-wired mx-md-4" href="/index.html"><img src="/assets/img/logo-wired.png"
-                        alt="logo" class="logo" /></a>
+      <nav class="navbar navbar-expand-lg px-5">
+        <div class="container-fluid div-nav">
+          <a class="navbar-brand logo-wired mx-md-4" href="/index.html"
+            ><img src="/assets/img/logo-wired.png" alt="logo" class="logo"
+          /></a>
 
-                <button class="navbar-toggler bg-secondary-subtle boton-hamburguesa" type="button"
-                    data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+          <button
+            class="navbar-toggler bg-secondary-subtle boton-hamburguesa"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div
+            class="collapse navbar-collapse contenedor-opciones"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4 ul-contenido">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/index.html"
+                  >INICIO</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/drama-series-1.html">SERIES</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/drama-movies-1.html">
+                  PELICULAS
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/error-404.html" target="_blank"
+                  ><i class="fa-solid fa-plus"></i> MI LISTA</a
+                >
+              </li>
+            </ul>
+
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 mx-lg-3">
+              <li class="nav-item my-md-1">
+                <button
+                  type="button"
+                  class="btn btn-transparent boton-search"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModalBus"
+                >
+                  <i class="fa-solid fa-magnifying-glass fa-lg"></i>
                 </button>
+              </li>
+              <li class="nav-item">
+                <button
+                  type="button"
+                  class="btn text-danger px-0 p-lg-2 d-none"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModalBus"
+                >
+                  Buscar
+                </button>
+              </li>
 
-                <div class="collapse navbar-collapse contenedor-opciones" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4 ul-contenido">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="/index.html">INICIO</a>
-                        </li>
+              <li class="nav-item">
+                <button
+                  type="button"
+                  class="btn btn-danger mx-1 my-3 my-md-1 mx-lg-2 boton-user"
+                  data-bs-toggle="modal"
+                  data-bs-target="#loginModal"
+                >
+                  <i class="fa-solid fa-user"></i>
+                </button>
+              </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link" href="/pages/drama-series-1.html">SERIES</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="/pages/drama-movies-1.html">
-                                PELICULAS
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="/pages/error-404.html" target="_blank"><i
-                                    class="fa-solid fa-plus"></i> MI
-                                LISTA</a>
-                        </li>
-                    </ul>
-
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 mx-lg-3">
-                        <li class="nav-item my-md-1">
-                            <button type="button" class="btn btn-transparent boton-search" data-bs-toggle="modal"
-                                data-bs-target="#exampleModalBus">
-                                <i class="fa-solid fa-magnifying-glass fa-lg"></i>
-                            </button>
-                        </li>
-                        <li class="nav-item">
-                            <button type="button" class="btn text-danger px-0 p-lg-2 d-none" data-bs-toggle="modal"
-                                data-bs-target="#exampleModalBus">
-                                Buscar
-                            </button>
-                        </li>
-
-                        <li class="nav-item">
-                            <button type="button" class="btn btn-danger mx-1 my-3 my-md-1 mx-lg-2 boton-user"
-                                data-bs-toggle="modal" data-bs-target="#loginModal">
-                                <i class="fa-solid fa-user"></i>
-                            </button>
-                        </li>
-
-                        <li class="nav-item">
-                            <a href="/pages/plans.html"><button type="button" class="btn btn-danger px-2 mt-lg-1"
-                                    data-bs-toggle="modal" data-bs-target="#exampleModalReg">
-                                    Suscribirse
-                                </button></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+              <li class="nav-item">
+                <a href="/pages/plans.html"
+                  ><button
+                    type="button"
+                    class="btn btn-danger px-2 mt-lg-1"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModalReg"
+                  >
+                    Suscribirse
+                  </button></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
-    <main style="margin-top: 150px;">
-        <div>
-
-            <div class="container">
-                <h1>Acerca de Nosotros</h1>
-                <div class="team">
-                    <div class="card">
-                        <img src="https://comporganizer.com/images/people/none.jpg" alt="Avatar de Mauricio">
-                        <h2>Mauricio</h2>
-                        <p> Innovador técnico y cofundador de la plataforma. Su pasión por la tecnología lo impulsa a
-                            crear experiencias de streaming sin igual, siempre buscando la próxima gran mejora.</p>
-                    </div>
-                    <div class="card">
-                        <img src="https://as1.ftcdn.net/v2/jpg/00/68/89/18/1000_F_68891875_Xws9CSpGl3R3D8XpruwW6x8TUwsLnBgA.jpg"
-                            alt="Avatar de Lucía">
-                        <h2>Lucía</h2>
-                        <p>Líder de marketing y comunicación. Su enfoque en la promoción y en conectar con la audiencia
-                            es clave para el crecimiento y éxito de la plataforma.</p>
-                    </div>
-                    <div class="card">
-                        <img src="https://comporganizer.com/images/people/none.jpg" alt="Avatar de Mariano">
-                        <h2>Mariano</h2>
-                        <p>Estratega de contenido y cofundador. Experto en detectar tendencias, se asegura de que la
-                            plataforma ofrezca siempre lo mejor y más relevante para los usuarios.</p>
-                    </div>
-                    <div class="card">
-                        <img src="https://as1.ftcdn.net/v2/jpg/00/68/89/18/1000_F_68891875_Xws9CSpGl3R3D8XpruwW6x8TUwsLnBgA.jpg"
-                            alt="Avatar de Celina">
-                        <h2>Celina</h2>
-                        <p>Directora creativa y mente maestra detrás del diseño de la interfaz. Su visión artística
-                            garantiza una experiencia de usuario intuitiva y atractiva.</p>
-                    </div>
-                </div>
+    <main>
+      <section>
+        <div
+          id="carouselExampleSlidesOnly"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="../assets/img/pngtree-red-themed-office-space-with-monochromatic-3d-desk-chair-icon-picture-image_8835045.jpg"
+                class="d-block w-100 banner"
+                alt="..."
+              />
+              <div class="carousel-caption d-block text-left">
+                <h5 class="texto-banner">Sobre nosotros</h5>
+              </div>
             </div>
+          </div>
         </div>
+      </section>
+      <section class="container">
+        <div class="row">
+          <div class="text-center mt-4 col-12 col-md-6">
+            <h4 class="mt-3">Nuestra misión</h4>
+            <p class="text-justify mx-5">
+              Nuestra misión es crear una plataforma de entretenimiento en línea
+              líder en la industria, donde los usuarios puedan disfrutar de una
+              amplia variedad de películas y series de alta calidad, desde los
+              últimos estrenos hasta clásicos atemporales.
+            </p>
+            <hr class="mx-auto w-50 mt-4" />
+          </div>
+          <div class="col-12 col-md-6">
+            <img
+              src="../assets/img/mision-icon.png"
+              alt=""
+              class="imagen-mision"
+            />
+          </div>
+        </div>
+      </section>
+      <div>
+        <div class="container">
+          <h4 class="text-center mb-4">Conoce nuestro equipo</h4>
+          <div class="team p-3">
+            <div class="card">
+              <img
+                src="https://comporganizer.com/images/people/none.jpg"
+                alt="Avatar de Mauricio"
+                class="img-cardd"
+              />
+              <h2>Mauricio</h2>
+              <p>
+                Innovador técnico y cofundador de la plataforma. Su pasión por
+                la tecnología lo impulsa a crear experiencias de streaming sin
+                igual, siempre buscando la próxima gran mejora.
+              </p>
+            </div>
+            <div class="card">
+              <img
+                src="https://as1.ftcdn.net/v2/jpg/00/68/89/18/1000_F_68891875_Xws9CSpGl3R3D8XpruwW6x8TUwsLnBgA.jpg"
+                alt="Avatar de Lucía"
+                class="img-cardd"
+              />
+              <h2>Lucía</h2>
+              <p>
+                Líder de marketing y comunicación. Su enfoque en la promoción y
+                en conectar con la audiencia es clave para el crecimiento y
+                éxito de la plataforma.
+              </p>
+            </div>
+            <div class="card">
+              <img
+                src="https://comporganizer.com/images/people/none.jpg"
+                alt="Avatar de Mariano"
+                class="img-cardd"
+              />
+              <h2>Mariano</h2>
+              <p>
+                Estratega de contenido y cofundador. Experto en detectar
+                tendencias, se asegura de que la plataforma ofrezca siempre lo
+                mejor y más relevante para los usuarios.
+              </p>
+            </div>
+            <div class="card">
+              <img
+                src="https://as1.ftcdn.net/v2/jpg/00/68/89/18/1000_F_68891875_Xws9CSpGl3R3D8XpruwW6x8TUwsLnBgA.jpg"
+                alt="Avatar de Celina"
+                class="img-cardd"
+              />
+              <h2>Celina</h2>
+              <p>
+                Directora creativa y mente maestra detrás del diseño de la
+                interfaz. Su visión artística garantiza una experiencia de
+                usuario intuitiva y atractiva.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
-    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="loginModalLabel" style="color: black;">
-                        Iniciar sesión
-                    </h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="form-group mb-3">
-                            <label style="color: black;" for="email">Correo Electrónico</label>
-                            <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo"
-                                maxlength="60" required />
-                        </div>
-                        <div class="form-group">
-                            <label style="color: black;" for="password">Contraseña</label>
-                            <input type="password" class="form-control" id="password"
-                                placeholder="Ingresa tu contraseña" minlength="6" maxlength="60" required />
-                        </div>
-                        <div class="form-check mt-3 form-switch">
-                            <input type="checkbox" class="form-check-input" id="check1" />
-                            <label style="color: black;" class="form-check-label" id="check1">Recuerdame.</label>
-                        </div>
+    <div
+      class="modal fade"
+      id="loginModal"
+      tabindex="-1"
+      aria-labelledby="loginModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1
+              class="modal-title fs-5"
+              id="loginModalLabel"
+              style="color: black"
+            >
+              Iniciar sesión
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group mb-3">
+                <label style="color: black" for="email"
+                  >Correo Electrónico</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="Ingresa tu correo"
+                  maxlength="60"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label style="color: black" for="password">Contraseña</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="password"
+                  placeholder="Ingresa tu contraseña"
+                  minlength="6"
+                  maxlength="60"
+                  required
+                />
+              </div>
+              <div class="form-check mt-3 form-switch">
+                <input type="checkbox" class="form-check-input" id="check1" />
+                <label style="color: black" class="form-check-label" id="check1"
+                  >Recuerdame.</label
+                >
+              </div>
 
-                        <button type="submit" class="btn btn-danger mt-4">
-                            Iniciar Sesión
-                        </button>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <p>¿Primera vez en Wired?</p>
-                    <a href="./pages/plans.html" class="btn btn-link text-danger">Suscribite acá</a>
-                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">
-                        Cerrar
-                    </button>
-                </div>
-            </div>
+              <button type="submit" class="btn btn-danger mt-4">
+                Iniciar Sesión
+              </button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <p>¿Primera vez en Wired?</p>
+            <a href="./pages/plans.html" class="btn btn-link text-danger"
+              >Suscribite acá</a
+            >
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-bs-dismiss="modal"
+            >
+              Cerrar
+            </button>
+          </div>
         </div>
+      </div>
     </div>
 
-    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="loginModalLabel">
-                        Iniciar sesión
-                    </h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="form-group mb-3">
-                            <label for="email">Correo Electrónico</label>
-                            <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo"
-                                maxlength="60" required />
-                        </div>
-                        <div class="form-group">
-                            <label for="password">Contraseña</label>
-                            <input type="password" class="form-control" id="password"
-                                placeholder="Ingresa tu contraseña" minlength="6" maxlength="60" required />
-                        </div>
-                        <div class="form-check mt-3 form-switch">
-                            <input type="checkbox" class="form-check-input" id="check1" />
-                            <label class="form-check-label" id="check1">Recuerdame.</label>
-                        </div>
+    <div
+      class="modal fade"
+      id="loginModal"
+      tabindex="-1"
+      aria-labelledby="loginModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="loginModalLabel">
+              Iniciar sesión
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group mb-3">
+                <label for="email">Correo Electrónico</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="Ingresa tu correo"
+                  maxlength="60"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="password">Contraseña</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="password"
+                  placeholder="Ingresa tu contraseña"
+                  minlength="6"
+                  maxlength="60"
+                  required
+                />
+              </div>
+              <div class="form-check mt-3 form-switch">
+                <input type="checkbox" class="form-check-input" id="check1" />
+                <label class="form-check-label" id="check1">Recuerdame.</label>
+              </div>
 
-                        <button type="submit" class="btn btn-danger mt-4">
-                            Iniciar Sesión
-                        </button>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <p>¿Primera vez en Wired?</p>
-                    <a href="./pages/plans.html" class="btn btn-link text-danger">Suscribite acá</a>
-                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">
-                        Cerrar
-                    </button>
-                </div>
-            </div>
+              <button type="submit" class="btn btn-danger mt-4">
+                Iniciar Sesión
+              </button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <p>¿Primera vez en Wired?</p>
+            <a href="./pages/plans.html" class="btn btn-link text-danger"
+              >Suscribite acá</a
+            >
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-bs-dismiss="modal"
+            >
+              Cerrar
+            </button>
+          </div>
         </div>
+      </div>
     </div>
 
     <footer class="bg-dark footer">
-        <div class="grupo1">
-            <div class="box">
-                <figure>
-                    <a href="/index.html">
-                        <img src="/assets/img/logo-wired.png" alt="Logo Wired" />
-                    </a>
-                </figure>
-            </div>
-
-            <div class="box mt-md-3">
-                <h4 class="text-uppercase mb-4 fw-bold text-danger">Compañia</h4>
-                <ul class="px-0">
-                    <li>
-                        <a class="text-secondary" href="/pages/about-us.html">Nosotros</a>
-                    </li>
-                    <li>
-                        <a class="text-secondary" href="/pages/plans.html">Suscripción</a>
-                    </li>
-                    <li>
-                        <a class="text-secondary" href="/pages/contact-form.html">Contacto</a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="box mt-md-3">
-                <h4 class="text-uppercase mb-4 fw-bold text-danger">Siguenos</h4>
-                <div class="redes">
-                    <a href="https://es-la.facebook.com/login/device-based/regular/login/" target="_blank"
-                        class="text-secondary"><i class="fa-brands fa-square-facebook"></i></a>
-
-                    <a href="https://www.instagram.com/accounts/emailsignup/" target="_blank" class="text-secondary"><i
-                            class="fa-brands fa-square-instagram"></i></a>
-
-                    <a href="https://x.com/i/flow/login" target="_blank" class="text-secondary"><i
-                            class="fa-brands fa-square-twitter"></i></a>
-                </div>
-            </div>
+      <div class="grupo1">
+        <div class="box">
+          <figure>
+            <a href="/index.html">
+              <img src="/assets/img/logo-wired.png" alt="Logo Wired" />
+            </a>
+          </figure>
         </div>
 
-        <div class="grupo2 bg-dark text-secondary text-center">
-            <small>&copy; 2024 - Todos los Derechos Reservados.</small>
+        <div class="box mt-md-3">
+          <h4 class="text-uppercase mb-4 fw-bold text-danger">Compañia</h4>
+          <ul class="px-0">
+            <li>
+              <a class="text-secondary" href="/pages/about-us.html">Nosotros</a>
+            </li>
+            <li>
+              <a class="text-secondary" href="/pages/plans.html">Suscripción</a>
+            </li>
+            <li>
+              <a class="text-secondary" href="/pages/contact-form.html">Contacto</a>
+            </li>
+          </ul>
         </div>
+
+        <div class="box mt-md-3">
+          <h4 class="text-uppercase mb-4 fw-bold text-danger">Siguenos</h4>
+          <div class="redes">
+            <a
+              href="https://es-la.facebook.com/login/device-based/regular/login/"
+              target="_blank"
+              class="text-secondary"
+              ><i class="fa-brands fa-square-facebook"></i
+            ></a>
+
+            <a
+              href="https://www.instagram.com/accounts/emailsignup/"
+              target="_blank"
+              class="text-secondary"
+              ><i class="fa-brands fa-square-instagram"></i
+            ></a>
+
+            <a
+              href="https://x.com/i/flow/login"
+              target="_blank"
+              class="text-secondary"
+              ><i class="fa-brands fa-square-twitter"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="grupo2 bg-dark text-secondary text-center">
+        <small>&copy; 2024 - Todos los Derechos Reservados.</small>
+      </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
