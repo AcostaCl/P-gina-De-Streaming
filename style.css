@@ -196,67 +196,65 @@ header {
     }
   }
 
-  .logo-wired img { allcomedy
-  transform: scale (2.5);dev
+  .logo-wired img {
+    transform: scale (2.5);
     transform: scale(2.5);
   }
 
-    .boton-hamburguesa {
-      width: 50px;
-      height: 35px;
+  .boton-hamburguesa {
+    width: 50px;
+    height: 35px;
+    display: flex;
+    span {
+      height: 25px;
       display: flex;
-      span {
-        height: 25px;
-        display: flex;
-        justify-content: center;
-      }
+      justify-content: center;
     }
-    .footer {
-      .grupo1 {
+  }
+  .footer {
+    .grupo1 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 90%;
+      font-size: 12px;
+
+      .box {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        width: 90%;
-        font-size: 12px;
 
-        .box {
-          display: flex;
-          flex-direction: column;
-
-          .redes {
-            font-size: medium;
-            i {
-              width: 1.3rem;
-              font-size: 1.3em;
-            }
+        .redes {
+          font-size: medium;
+          i {
+            width: 1.3rem;
+            font-size: 1.3em;
           }
         }
       }
-      .grupo2 {
-        font-size: 10px;
+    }
+    .grupo2 {
+      font-size: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    .navbar {
+      width: 100dvw;
+      .div-nav {
+        width: 100dvw;
+        .logo-wired {
+          width: 25%;
+          .logo {
+            width: 100%;
+          }
+        }
       }
     }
   }
 
-
-  @media screen and (max-width: 768px) {
-    header {
-      .navbar {
-        width: 100dvw;
-        .div-nav {
-          width: 100dvw;
-          .logo-wired {
-            width: 25%;
-            .logo {
-              width: 100%;
-            }
-          }
-        }
-      }
-    }
-
   .logo-wired img {
-allcomedy
     transform: scale (2);
 
     transform: scale(2);
@@ -264,29 +262,26 @@ allcomedy
     transform: scale (2);
   }
 
+  .contenedor-opciones {
+    display: flex;
+    justify-content: space-between;
+  }
 
   .contenedor-opciones {
     display: flex;
     justify-content: space-between;
- dev
   }
 
-    .contenedor-opciones {
-      display: flex;
-      justify-content: space-between;
-    }
-
-    .footer {
-      .grupo1 {
-        padding: 25px 0;
-        .box {
-          figure {
-            img {
-              width: 150px;
-            }
+  .footer {
+    .grupo1 {
+      padding: 25px 0;
+      .box {
+        figure {
+          img {
+            width: 150px;
           }
         }
       }
     }
   }
-
+}
