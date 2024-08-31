@@ -70,6 +70,10 @@ header {
     }
   }
 
+  .card-pelicula {
+    width: 17rem;
+  }
+
   .contenedor-opciones {
     a {
       color: white;
