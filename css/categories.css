@@ -173,6 +173,12 @@ body {
   }
 }
 
+@media (max-width: 765px) {
+  .suggestion {
+    height: 200px;
+  }
+}
+
 @media (min-width: 768px) and (max-width: 1023px) {
   .suggestion {
     height: 300px;
