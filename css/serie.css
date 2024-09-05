@@ -24,6 +24,11 @@
 .little-tittle {
     font-size: 1.4rem;
 }
+
+.btn-color-modal {
+  color: #d95043;
+}
+
 .play-trailer {
   transition: transform 0.5s linear;
 }
@@ -93,6 +98,14 @@
     box-shadow: 0 0 5px white, 0 0 25px white;
     background-color: rgba(255, 255, 255, 0.2);
   }
+
+.tittlechapter {
+  color: #d95043;
+}
+
+.infochapter {
+  color: grey;
+}
 
 .data-info-title {
   color: #d95043;
