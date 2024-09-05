@@ -25,6 +25,10 @@
   font-size: 1.4rem;
 }
 
+.btn-color-modal {
+  color: #d95043;
+}
+
 .play-trailer {
   transition: transform 0.5s linear;
 }
